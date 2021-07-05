@@ -1,6 +1,6 @@
 # FPGAudio
 
-This project is a set of audio processing functions on FPGA board, using Verilog language.
+This project is a set of audio processing functions on FPGA board, using Verilog language.  
 The FPGA used in this project is ALETRA EP4CE10F17C8.  
 The audio decoder chip used in this project is WM8978.  
 The lcd display used in this project is ALIENTEK 4.3' RGBLCD 480 * 272  
