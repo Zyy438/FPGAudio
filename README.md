@@ -1,3 +1,6 @@
+![DSC_0095](https://user-images.githubusercontent.com/73535458/124514099-ddfa2a00-de0e-11eb-9fba-dc51d72d24b0.jpg)
+
+
 # FPGAudio
 
 This project is a set of audio processing functions on FPGA board, using Verilog language.  
