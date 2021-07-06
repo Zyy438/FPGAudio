@@ -54,6 +54,15 @@ This project uses the WM8978 chip to convert the analog signal of the input audi
 
 ### IIC protocol
 
+I2C(Inter-integrated circuit) is a very popular bus applied in many field. invented by Philips company in 1980s, it just needs two wires- SCL and SDA, to implement communication with different modules. the SCL wire mainly transmit clock signal to synchronize the data transmission, the SDA wire uausally transmit data signal between different modules. Various controlled devices(slave) are connected in parallel on the bus and identified by the device address (SLAVE ADDR, refer to the device manual for details). In this project, the FPGA is used as a master module and the WM8978 is used as a slave module(slave addr= 7'h1A).  below shows the structure of a typical I2C bus[4]:
+
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/73535458/124633053-7e0b8e00-deb7-11eb-8afb-435c63f05162.png">
+
+Therefore, before the I2C device starts to communicate (transmit data), the serial clock line SCL and the serial data line SDA line are in a high level state, and the I2C bus is in an idle state at this time. If the master (here refers to FPGA) wants to start transmitting data, it just needs to pull the SDA line low when SCL is high to generate a start signal. After the slave detects the start signal, it is ready to receive data. When the data transmission is completed The master only needs to generate a stop signal to tell the slave that the data transmission is over. The stop signal is generated when SCL is high, and SDA jumps from low to high. After the slave detects the stop signal, it stops receiving data. The overall timing of I2C is shown in the figure below. Before the start signal, it is in the idle state, and the period after the start signal to before the stop signal is the data transmission state. The master can write data to the slave or read the data output by the slave. The data transmission is through the bidirectional data line ( SDA) complete. After the stop signal is generated, the bus will be in an idle state again.[5]
+
+<img width="714" alt="image" src="https://user-images.githubusercontent.com/73535458/124633571-fa05d600-deb7-11eb-8933-180eb28f4f92.png">
+
+
 
 
 ## Reference
@@ -61,3 +70,5 @@ This project uses the WM8978 chip to convert the analog signal of the input audi
 1. https://zh.wikipedia.org/wiki/HBP
 2. https://titanwolf.org/Network/Articles/Article?AID=e1dd946f-22b5-4520-be37-debb91e2d93d#gsc.tab=0
 3. https://www.digi.com/resources/documentation/digidocs/90001945-13/reference/yocto/r_an_adding_custom_display.htm
+4. https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1625586943073&ref_url=https%253A%252F%252Fwww.google.com%252F
+5. https://www.researchgate.net/publication/221908590_Non-Volatile_Memory_Interface_Protocols_for_Smart_Sensor_Networks_and_Mobile_Devices
