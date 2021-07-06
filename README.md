@@ -62,6 +62,11 @@ Therefore, before the I2C device starts to communicate (transmit data), the seri
 
 <img width="714" alt="image" src="https://user-images.githubusercontent.com/73535458/124633571-fa05d600-deb7-11eb-8933-180eb28f4f92.png">
 
+### WM8978
+
+WM8978 is a powerful audio interface(decoder and encoder) designed for digital devices. It is able to communicate will FPGA board through I2S(Inter-IC sound) protocol, which is very similar to I2C protocol. Below shows the time feature of I2S protocol:[6]
+
+<img width="743" alt="image" src="https://user-images.githubusercontent.com/73535458/124634835-5caba180-deb9-11eb-9156-19b31a369e2e.png">
 
 
 
@@ -72,3 +77,4 @@ Therefore, before the I2C device starts to communicate (transmit data), the seri
 3. https://www.digi.com/resources/documentation/digidocs/90001945-13/reference/yocto/r_an_adding_custom_display.htm
 4. https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1625586943073&ref_url=https%253A%252F%252Fwww.google.com%252F
 5. https://www.researchgate.net/publication/221908590_Non-Volatile_Memory_Interface_Protocols_for_Smart_Sensor_Networks_and_Mobile_Devices
+6. https://forums.xilinx.com/t5/Processor-System-Design-and-AXI/ZYBO-I2S-BCLK/td-p/433246
