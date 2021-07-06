@@ -44,7 +44,15 @@ Above shows the structure of the LCD driver module. There are 3 parts in the mod
 
 The clock division part aims to generate a 12.5 Hz clock signal (called lcd_pclk) for the lcd driver. This is because that, to generate a frame in such a 480 * 272 screen, it needs:   N(CLK) = (VSPW + VBP + LINE + VFP) * (HSPW + HBP + HOZVAL + HFP) = 150150 clock periods (different brands of screens have different parameters), and to make its refreshing rate to be 60Hz, it needs 150150 * 60 clock periods in a second. By this way, its required clock frequency will be around 9 MHz. To make things easier, the clk_div part will just divide the 50Mhz input clk signal into 12.5 Hz, thus a pll moudle is no longer needed and the frame rate will be a bit higher.  
 
-The lcd_driver part is connected to the lcd_show part and the lcd interface. There is a internal reg parameter called 'data_req' and it will be 1 when it comes to the data part (not in the HSYNC or VSYNC time period). When 'data_req' becomes 1, the module will send the location of the current pixel to the lcd_show part (signal pixel_x and pixel_y), indicating the lcd_show part which pixel is being shown. This is implemented by the internal counters 'h_cnt' and 'v_cnt'. The lcd_bl signal is connected to the lcd interface and the lcd will always be on when it is 1. Also, it will transmit the data time for a raw and for a frame to the lcd_show part as well. 
+The lcd_driver part is connected to the lcd_show part and the lcd interface. There is a internal reg parameter called 'data_req' and it will be 1 when it comes to the data part (not in the HSYNC or VSYNC time period). When 'data_req' becomes 1, the module will send the location of the current pixel to the lcd_show part (signal pixel_x and pixel_y), indicating the lcd_show part which pixel is being shown. This is implemented by the internal counters 'h_cnt' and 'v_cnt'. The lcd_bl signal is connected to the lcd interface and the lcd will always be on when it is 1. Also, it will transmit the data time for a raw and for a frame to the lcd_show part as well.  
+
+Relatively speaking, the structure of lcd_show is very simple. After receiving the pixel location information from the LCD drive part, it will output the color signal (RGB565 format) of the pixel at the corresponding location through its only output port 'pixel_data'.
+
+## 2. Audio interface (WM8978 chip)
+
+This project uses the WM8978 chip to convert the analog signal of the input audio into a digital signal, then processes it through various signal processing modules inside the FPGA (the frequency domain data is obtained through fast Fourier transform module and displayed on the LCD screen). Finally, the signal will be output to another audio port through the WM8978 chip. The user will get the unprocessed input signal at the output audio port because this signal is bypassed to the output interface.
+
+### IIC protocol
 
 
 
