@@ -16,7 +16,7 @@ A 4.3-inch LCD screen with 480*272 resolution is used in this project. Therefore
 
 ### Resolution of a LCD display
 
-The resolution of the LCD screen (480 * 200) usually means that the screen has 200 lines of pixels, and each line has 480 pixels. The LCD screen transmits the color information of each pixel one by one in the order from left to right and top to bottom. When the display driver is connected with fpga, fpga will send the position information and color information of the current pixel.
+The resolution of the LCD screen (480 * 272) usually means that the screen has 272 lines of pixels, and each line has 480 pixels. The LCD screen transmits the color information of each pixel one by one in the order from left to right and top to bottom. When the display driver is connected with fpga, fpga will send the position information and color information of the current pixel.
 
 ### Color information
 
@@ -39,7 +39,10 @@ Therefore, when transmitting a new frame or a new raw of pixel data, the driver 
 
 ### Working process of the LCD driver
 
-
+![1651625562934_ pic_hd](https://user-images.githubusercontent.com/73535458/124575251-d02fbd80-de7d-11eb-9035-b70a20f720f4.jpg)  
+Above shows the structure of the LCD driver module. There are 3 parts in the module: clk division, lcd deiver and lcd show.  
+The clock division part aims to generate a 12.5 Hz clock signal (called lcd_pclk) for the lcd driver. This is because that, to generate a frame in such a 480 * 272 screen, it needs:   N(CLK) = (VSPW + VBP + LINE + VFP) * (HSPW + HBP + HOZVAL + HFP) = 150150 clock periods (different brands of screens have different parameters), and to make its refreshing rate to be 60Hz, it needs 150150 * 60 clock periods in a second. By this way, its required clock frequency will be around 9 MHz. To make things easier, the clk_div part will just divide the 50Mhz input clk signal into 12.5 Hz, thus a pll moudle is no longer needed and the frame rate will be a bit higher.  
+The lcd_driver part is connected to the lcd_show part and the lcd interface. There is a internal reg parameter called 'data_req' and it will be 1 when it comes to the data part (not in the HSYNC or VSYNC time period). When 'data_req' becomes 1, the module will send the location of the current pixel to the lcd_show part (signal pixel_x and pixel_y), indicating the lcd_show part which pixel is being shown. This is implemented by the internal counters 'h_cnt' and 'v_cnt'. The lcd_bl signal is connected to the lcd interface and the lcd will always be on when it is 1. Also, it will transmit the data time for a raw and for a frame to the lcd_show part as well. 
 
 
 
