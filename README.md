@@ -29,13 +29,13 @@ VBP,HBP,HFP and VFP are four factors that cannot be ignored in LCD timing analys
 
 below shows definition of some time parameters of LCD display:[3]
 Typical timing parameters include:
-Horizontal Back Porch (HBP): Number of PIXCLK pulses between HSYNC signal and the first valid pixel data.
-Horizontal Front porch (HFP): Number of PIXCLK pulses between the last valid pixel data in the line and the next HSYNC pulse.
-Vertical Back Porch (VBP): Number of lines (HSYNC pulses) from a VSYNC signal to the first valid line.
-Vertical Front Porch (VFP): Number of lines (HSYNC pulses) between the last valid line of the frame and the next VSYNC pulse.
+Horizontal Back Porch (HBP): Number of PIXCLK pulses between HSYNC signal and the first valid pixel data.  
+Horizontal Front porch (HFP): Number of PIXCLK pulses between the last valid pixel data in the line and the next HSYNC pulse.  
+Vertical Back Porch (VBP): Number of lines (HSYNC pulses) from a VSYNC signal to the first valid line.  
+Vertical Front Porch (VFP): Number of lines (HSYNC pulses) between the last valid line of the frame and the next VSYNC pulse.  
 
 <img width="1109" alt="WechatIMG164" src="https://user-images.githubusercontent.com/73535458/124565445-a02fec80-de74-11eb-9aa1-72d2f4dd00a0.png">
-Therefore, when transmitting a new frame or a new raw of pixel data, the driver needs to wait for a specific period of time. So as after finishing transmitting a raw or a frame of pixel data.
+Therefore, when transmitting a new frame or a new raw of pixel data, the driver needs to wait for a specific period of time. So as after finishing transmitting a raw or a frame of pixel data.  
 
 
 
