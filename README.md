@@ -35,7 +35,11 @@ Vertical Back Porch (VBP): Number of lines (HSYNC pulses) from a VSYNC signal to
 Vertical Front Porch (VFP): Number of lines (HSYNC pulses) between the last valid line of the frame and the next VSYNC pulse.  
 
 <img width="1109" alt="WechatIMG164" src="https://user-images.githubusercontent.com/73535458/124565445-a02fec80-de74-11eb-9aa1-72d2f4dd00a0.png">
-Therefore, when transmitting a new frame or a new raw of pixel data, the driver needs to wait for a specific period of time. So as after finishing transmitting a raw or a frame of pixel data.  
+Therefore, when transmitting a new frame or a new raw of pixel data, the driver needs to wait for a specific period of time. So as after finishing transmitting a raw or a frame of pixel data. This will be reflected in the verilog codes and more explaination can be found in the '.v' files.
+
+### Working process of the LCD driver
+
+
 
 
 
