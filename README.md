@@ -83,7 +83,24 @@ The structure of the wm8978 control module is shown below:
 
 ![1701625645001_ pic_hd](https://user-images.githubusercontent.com/73535458/124722691-de90de80-df3c-11eb-8bc5-ea50e29dc6ca.jpg)
 
+Pll_clk part:
 
+The pll_clk part is aims to generate a 12MHz output signal by using a pll ip_core. The signal will directly go to the WM8978 chip as the source clock signal and thus drive the chip. Also, by configuring the registers, the WM8978 will generate a 12.288MHz clock signal and work with that new clock signal. The reason why a 12.288MHz clock signal is needed is that, LRC is the data alignment clock signal of the left and right channels of the audio, and BCLK is Bit Clock, which is used to synchronize data input and output. MCLK is the main clock input interface, the frequency of MCLK is 256fs, and fs is the audio sampling rate, generally 48kHz, so MCLK is 256 × 48 = 12288kHz = 12.288MHz. 
+
+
+audio_receive:
+
+this module is drived by the clk signal from WM 8978, since WM8978 chip is working in a master mode this time. it will generate the aud_bclk signal. this module will be reset if reset button is pressed or the synchronization signal aud_lrc has a rising or falling edge. else it will start counting how many bits being received and start receiving data. a frame usually has 32bits of data. so, after 32 aud_bclk period(rx_cnt=32), the data in the temporary register will output the data in this frame. within the frame, the data in each bit of the temporary register will be updated one by one. a signal called rx_done will be output high for a period when datas in a frame are all read.
+this is to indicate the chip that this frame is successfully received.
+
+audio_sned:
+
+this is the module to send audio signal to the WM8978 chip. Working similarly with audio_receive module, if the reset button is pressed or the aud_lrc synchronization signal comes, the counter for the bits will be reset.  the output data will be loaded in a temporary register and wait to be sent if aud_lrc is changed. then the counter increase from 0 and the new data frame will be output one bit by one bit
+
+i2c_reg_cfg:
+
+this module has a 1MHZ clk signal, synchronized with WM8978. this module is to send configuration signal to WM8978 chip through I2S protocol. if reset button pressed, start_init_count becomes 0 and start increasing. it remains the same value after a specific time passed. when a specific time is passed, i2c_exec becomes high and let the register counter
+init_reg_cnt increase by 1 (it will be increased for every time i2c_exec becomes high), thus go to the next register (in WM 8978 chip)being configured. then, output the configuration signal through i2c_data output pin to the chip the module will receice signal cfg_done from the chip as well, indicating that a signal has been successfully received by the chip. if this signal becomes high, i2c_exec will be high again and moves to next register (init_reg_cnt += 1) in different registers being configured, different configuration data will be sent through I2S bus (output i2c_data).
 
 ## Reference
 
