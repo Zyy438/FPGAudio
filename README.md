@@ -68,7 +68,22 @@ WM8978 is a powerful audio interface(decoder and encoder) designed for digital d
 
 <img width="743" alt="image" src="https://user-images.githubusercontent.com/73535458/124634835-5caba180-deb9-11eb-9156-19b31a369e2e.png">  
 
-When the LRC signal is low, the left channel data will be transmitted. Right channel data will be transmitted when LRC signal turns high. BCLK is the synchronization clock signal between the WM8978 chip and the FPGA audio interface module. It should be noted that no matter how many bits of valid data are in the I2S format audio signals DACDAT and ADCDAT, the highest bit of the data always appears at the second BCLK pulse after the LRC change, that is, the high bit is first when the data is transmitted, and the bit is sampled at the second rising edge of BCLK after LRC changes.
+When the LRC signal is low, the left channel data will be transmitted. Right channel data will be transmitted when LRC signal turns high. BCLK is the synchronization clock signal between the WM8978 chip and the FPGA audio interface module. It should be noted that no matter how many bits of valid data are in the I2S format audio signals DACDAT and ADCDAT, the highest bit of the data always appears at the second BCLK pulse after the LRC change, that is, the high bit is first when the data is transmitted, and the bit is sampled at the second rising edge of BCLK after LRC changes.  
+There are many registers inside WM8978, and the working status of WM8978 can be modified by assigning values to these registers. Please refer to the manual of WM8978 for specific configuration instructions
+
+There are many registers inside WM8978, and the working status of WM8978 can be modified by assigning values to these registers. Please refer to the manual of WM8978 for specific configuration instruction
+
+### Working process of the audio interface
+
+The structure of the audio interface is shown below:
+
+![1681625644172_ pic_hd](https://user-images.githubusercontent.com/73535458/124721257-87d6d500-df3b-11eb-810b-378f05e96645.jpg)
+
+The structure of the wm8978 control module is shown below:
+
+![1701625645001_ pic_hd](https://user-images.githubusercontent.com/73535458/124722691-de90de80-df3c-11eb-8bc5-ea50e29dc6ca.jpg)
+
+
 
 ## Reference
 
