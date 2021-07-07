@@ -106,6 +106,15 @@ i2c_drive:
 
 This module is written by the manufactor of the develop board ALIENTEK.Co. It mainly defines the communication protocol between the fpga and the WM8978 chip.
 
+### Phase locked loop
+
+Phase-locked loops is a frequency and phase control system that uses feedback control principles. Its function is to synchronize the signal output by the circuit with its external reference signal. When the frequency of the reference signal or When the phase changes, the phase-locked loop will detect this change and adjust the output frequency through its internal feedback system until the two are resynchronized. This synchronization is also called "phase-locked."
+
+In this project, since there is a need to generate clock signals in different frequency, phase locked loop is applied to drive different modules. The ALETRA FPGA chip used in this project has already embedded 2 phase locked loops, and so that pll ip-core is used in quartus to enable the two plls.
+
+## Fast fourier transform
+
+
 ## Reference
 
 1. https://zh.wikipedia.org/wiki/HBP
