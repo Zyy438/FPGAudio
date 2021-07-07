@@ -1,0 +1,16 @@
+module audio_speak (
+	input                     sys_clk;
+	input                     sys_rst;
+	//WM978 interface
+	input                     aud_bclk,   //bit clk
+	input                     aud_lrc,    //synchronize signal
+	input                     aud_adcdat, //audio_input
+	output                    aud_mclk,   //main clk signal for WM8978
+	output                    aud_dacdat  //audio output
+	//control interface
+	output                    aud_scl,    //WM8978 audio IIC clock signal
+	inout                     aud_sda,    //WM8978 audio IIC data signal
+);
+
+//wire define
+wire    [31:0]      adc_data;   //audio data sampled by FPGA

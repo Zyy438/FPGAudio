@@ -1,0 +1,42 @@
+module audio_receive #(parameter WL= 6'32)(
+	input                   aud_bclk,  //WM8978 synchronized clk
+	input                   sys_rst,  
+	input                   aud_lrc,   //synchronization signal
+	input                   aud_adcdat,//audio input signal
+	
+	//user interface
+	output      reg         rx_done,   //receive done
+	output      reg  [31:0] adc_data   //data received
+);
+
+//parameter deine
+
+//reg defin
+reg                aud_lrc_d0;        //aud_lrc delay for a period
+reg     [5:0]      rx_cnt;            //receive count
+reg     [31:0]     adc_data_t;        //pre_output data
+
+//wire define
+wire               lrc_edge;          //edge signal
+
+//************************************************************************
+//                      main code
+//************************************************************************
+//detect rising edge of the aud_lrc signal
+assign  lrc_edge = aud_lrc ^ aud_lrc_d0; 
+
+//delay the aud_lrc_d0 for a aud_bclk period
+always @(posedge aud_bclk or negedge sys_rst) begin
+	if(!sys_rst) 
+		aud_lrc_d0 <= 1'b0;
+	else
+		aud_lrc_d0 <= aud_lrc;
+end
+
+//sample audio data
+always @(posedge aud_bclk or negedge sys_rst) begin
+	if(!sys_rst)
+		rx_cnt <= 6'd0;
+	else if (lrc_edge)
+		
+end

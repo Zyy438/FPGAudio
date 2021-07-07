@@ -1,0 +1,8 @@
+module i2c_reg_cfg (
+	input                  clk,
+	input                  rst_n,
+	input                  i2c_done,   //i2c finish signal
+	output    reg          i2c_exec,   //i2c executing signal
+	output    reg          cfg_done,   //configuration done
+	output    reg  [15:0]  i2c_data    //data in the register
+;)
