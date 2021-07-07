@@ -66,9 +66,9 @@ Therefore, before the I2C device starts to communicate (transmit data), the seri
 
 WM8978 is a powerful audio interface(decoder and encoder) designed for digital devices. It is able to communicate will FPGA board through I2S(Inter-IC sound) protocol, which is very similar to I2C protocol. Below shows the time feature of I2S protocol:[6]
 
-<img width="743" alt="image" src="https://user-images.githubusercontent.com/73535458/124634835-5caba180-deb9-11eb-9156-19b31a369e2e.png">
+<img width="743" alt="image" src="https://user-images.githubusercontent.com/73535458/124634835-5caba180-deb9-11eb-9156-19b31a369e2e.png">  
 
-
+When the LRC signal is low, the left channel data will be transmitted. Right channel data will be transmitted when LRC signal turns high. BCLK is the synchronization clock signal between the WM8978 chip and the FPGA audio interface module. It should be noted that no matter how many bits of valid data are in the I2S format audio signals DACDAT and ADCDAT, the highest bit of the data always appears at the second BCLK pulse after the LRC change, that is, the high bit is first when the data is transmitted, and the bit is sampled at the second rising edge of BCLK after LRC changes.
 
 ## Reference
 
