@@ -102,6 +102,10 @@ i2c_reg_cfg:
 this module has a 1MHZ clk signal, synchronized with WM8978. this module is to send configuration signal to WM8978 chip through I2S protocol. if reset button pressed, start_init_count becomes 0 and start increasing. it remains the same value after a specific time passed. when a specific time is passed, i2c_exec becomes high and let the register counter
 init_reg_cnt increase by 1 (it will be increased for every time i2c_exec becomes high), thus go to the next register (in WM 8978 chip)being configured. then, output the configuration signal through i2c_data output pin to the chip the module will receice signal cfg_done from the chip as well, indicating that a signal has been successfully received by the chip. if this signal becomes high, i2c_exec will be high again and moves to next register (init_reg_cnt += 1) in different registers being configured, different configuration data will be sent through I2S bus (output i2c_data).
 
+i2c_drive: 
+
+This module is written by the manufactor of the develop board ALIENTEK.Co. It mainly defines the communication protocol between the fpga and the WM8978 chip.
+
 ## Reference
 
 1. https://zh.wikipedia.org/wiki/HBP
