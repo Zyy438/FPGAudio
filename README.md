@@ -114,6 +114,9 @@ In this project, since there is a need to generate clock signals in different fr
 
 ## Fast fourier transform
 
+### PLL IP-core
+
+
 
 ## Reference
 
