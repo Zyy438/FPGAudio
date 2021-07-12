@@ -110,11 +110,13 @@ This module is written by the manufactor of the develop board ALIENTEK.Co. It ma
 
 Phase-locked loops is a frequency and phase control system that uses feedback control principles. Its function is to synchronize the signal output by the circuit with its external reference signal. When the frequency of the reference signal or When the phase changes, the phase-locked loop will detect this change and adjust the output frequency through its internal feedback system until the two are resynchronized. This synchronization is also called "phase-locked."
 
-In this project, since there is a need to generate clock signals in different frequency, phase locked loop is applied to drive different modules. The ALETRA FPGA chip used in this project has already embedded 2 phase locked loops, and so that pll ip-core is used in quartus to enable the two plls.
+The audio interface and the lcd driver in this project actually need to be drived in other frequencies. (not 50MHz as sys_clk does) It is an option to divide the sys-clk to generate lower frequency clock signals. However, it can only generate 50/2MHz, 50/4Mhz, 50/6MHz or frequencies like that. For more accurate frequencies needed，（like 12.288MHz used in the audio interface) a pll will be needed. In this project, the ALETRA FPGA chip used in this project has already embedded 2 phase locked loops and so that pll ip-core is used in quartus to enable the two plls.
 
 ## Fast fourier transform
 
-### PLL IP-core
+### FIFO IP-core
+FIFO(First in first out) is usually used in systems which works in 2 or more clock domains. When a signal is transmitted from one clock domain to another clock domain, since the modules that send and receive the signals have different operating frequencies, when the signal-receiving module starts to receive the signal, it may just hit the metastable state of the sending signal, which leads to instability of the system. At this time, adding a fifo module to buffer data between the two clock domains will reduce the occurrence of this situation. Fifo usually has two ports for input signal and output signal, as well as write input clock and write request signal. Of course, the read input clock and read request signal are also indispensable. On this basis, a readempty signal and a writefull signal can also be added to the fifo to indicate that there is no signal in the fifo, or that the fifo is full of signals. The input data bit width and depth of fifo (the number of data that can be stored) can be set in the quartus ip core.
+
 
 
 
