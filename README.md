@@ -11,7 +11,7 @@ This project will be introduced by 3 parts:
 ## How to use
 
 1. download the portfolio and open the (.qpf) file in Quartus ii 13.1(the file is in '/par' folder)
-2. Set file 'uart_syn.v' as top level entity
+2. Set file 'fft_top.v' as top level entity
 3. Assign the pins according to the FPGA used and compile the project
 4. Program the .sof file to the FPGA board
 5. Connect the FPGA with an audio input(throuogh .adcdat port)
