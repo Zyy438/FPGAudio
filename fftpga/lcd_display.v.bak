@@ -1,0 +1,31 @@
+/*
+10/7/2021
+Zyy ZHou(22670661)
+this module is to get the modulus of the audio signal in frequency domain and thus represent it in 
+the lcd display
+*/
+module lcd_display(
+	input                lcd_clk,  //lcd clock signal
+	input                sys_rst, 
+	
+	input     [10:0]     pixel_xpos,  //pixel position on x axis
+	input     [10:0]     pixel_ypos,  //pixel position on y axis
+	
+	input     [6:0]      line_cnt,   //indicating which line in the lcd it should be 
+	input     [15:0]     line_lengh, //the length of the line, coming fromt the fft module, the 
+												//modulus value
+	output               data_req,
+	output               wr_over,    //a frame is written over
+	output    [15:0]     lcd_data    //pixel color, RGB565, 16bits
+);
+
+//parameter define
+
+
+//reg define
+
+//wire define
+
+//***********************************************************************
+//             main code
+//**********************************************************************

@@ -1,0 +1,6 @@
+module lcd_top(
+	input                    sys_clk,
+	input                    sys_rst,
+	
+	
+);
