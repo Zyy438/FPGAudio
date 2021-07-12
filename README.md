@@ -124,6 +124,11 @@ the output of the fft module has 32 bits. However, it is actually a complex numb
 ### fft_fifo_control module
 this moudule is used for ELEC5552 design2 FFTPGA, to control the data flow between the fifo and the fast fourier transform ip-core. since the audio input has a lower frequency clk 'aud_bclk'(around 12.28MHz) when communicating with the fft module(working in a 50MHz clk), an fifo module between them can effectively reduce the chance that metastable state happens. the module has two working state. this is controled by a state machine reg signal called 'state'. when press the rst button, the signal will go to the first state (state=1'b0), then it will hold the fft_rst_n signal for 32 clk period to let fft get reset. after 32 clk period, it will release the fft_rst_n signal and go to next state. in the second state, the module will firstly judge whether there is data in the fifo by the signal fifo_rd_empty, if there is, it will pull the fft_valid signal high and enable the fft module. Then, start a counter to count which bit it is in the data segment and so that enable the fft_eop signal as well as the fft_sop signal. the depth of the fft is 128 bits, therefore, the counter will be reset to 10'd1 when it comes to 128. the fft ip-core used in this project has a 128 sample width. So, a segment of signal sent to the ip-core should have 128 bits. a reg counting this is called fft_cnt. It will be reset to 0 after it becomes 128. when it is 1, output sop shall be 1, when it is 128, output fft_eop shall be 1.
 
+The overview of the fft module's structure is shown below:
+
+![3f1acddaee1020f1ed4e732e0157667](https://user-images.githubusercontent.com/73535458/125254252-de258880-e32c-11eb-8554-699976ad96a4.png)
+
+
 ## Reference
 1. https://zh.wikipedia.org/wiki/HBP
 2. https://titanwolf.org/Network/Articles/Article?AID=e1dd946f-22b5-4520-be37-debb91e2d93d#gsc.tab=0
