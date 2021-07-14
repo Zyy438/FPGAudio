@@ -14,8 +14,7 @@ Software used is Quartus 13.1 as well as Modelsim
 There are different audio processing algorithms applied in the project and they are stored in different branches of the project. Please go to the branch page to see more details of the algorithm you want.
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
 2. FIRPGA (still working on it)
-3. BEAMFORMING (still working on it)
-4. OVERDRIVE (not start yet)
+3. OVERDRIVE (not start yet)
 5. HIGH WAY TO AC/DC (not start yet)
 
 ## Fpga_uart
