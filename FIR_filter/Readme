@@ -1,0 +1,6 @@
+*********************************version 0.1***********************************************************
+this is a priminary pipline fir_filter structure
+the order is 31, which means that it has 32 coefficients.
+the coefficients are designed by fdatool in MATLAB, sample frequency to be 48000Hz, cutoff frequency to be 5000Hz, hamming window method
+
+*********************************version 0.2************************************************************
