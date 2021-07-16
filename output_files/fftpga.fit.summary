@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jul 15 16:54:03 2021
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : fftpga
+Top-level Entity Name : fftpga
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 10,306 / 10,320 ( 100 % )
+    Total combinational functions : 8,617 / 10,320 ( 83 % )
+    Dedicated logic registers : 6,195 / 10,320 ( 60 % )
+Total registers : 6195
+Total pins : 32 / 180 ( 18 % )
+Total virtual pins : 0
+Total memory bits : 35,072 / 423,936 ( 8 % )
+Embedded Multiplier 9-bit elements : 28 / 46 ( 61 % )
+Total PLLs : 1 / 2 ( 50 % )

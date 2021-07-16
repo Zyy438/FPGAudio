@@ -1,0 +1,29 @@
+/*
+14/7/2021
+Written by Zyy Zhou(22670661)
+A fir module to get signal from the wm8978 ctrl module and then do fir filtering, then send the audio data to the fft module
+*/
+
+module fir_filter(
+	input                 aud_bclk,
+	input                 rst_n,
+	//audio in
+	input                 rx_done,
+	input     [31:0]      adc_data,
+	//output signals 
+	output    [33:0]      fir_data,
+	output                fir_valid
+);
+
+//parameter define
+
+//reg define
+
+//wire define
+
+
+//*****************************************************************************************************
+//                            main code
+//*****************************************************************************************************
+
+endmodule
