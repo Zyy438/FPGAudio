@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at fir_filter_mat.v(55): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at i2c_reg_cfg.v(37): object "WL" differs only in case from object "wl" in the same scope

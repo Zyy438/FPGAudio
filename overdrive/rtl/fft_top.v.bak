@@ -1,0 +1,68 @@
+/*
+9/7/2021
+Zyy Zhou(22670661)  
+used for elec5552 design2 project
+this module is the FFT top entity, one of the main modules in FFTPGA functioin
+*/
+
+module fft_top (
+	input              sys_clk,
+	input              sys_rst,
+	
+	//connect to the audio interface(WM8978 driver)
+	input              audio_clk,
+	input      [15:0]  audio_data,
+	input              audio_valid,
+	
+	//connect to the lcd module
+	output             data_sop,  //start of a signal segment
+	output             data_eop,  //end of a signal segment
+	output             data_valid,   //the above 3 signals are delayed for 3 clk period.
+	output   [15:0]    data_modulus  //the length of the bar
+);
+
+//parameter define
+
+
+//reg define
+
+
+//wire define
+wire    [15:0]        audio_data_w;
+wire                  fifo_rdreq;
+wire                  iffo_rdempty;
+//go to the fft module (from fifo)
+wire                  fft_rst_n;
+wire                  fft_sop;
+wire                  fft_eop;
+wire                  fft_valid;
+//go to the data modulus module(from fft)
+wire    [15:0]        source_real;
+wire    [15:0]        source_imag;
+wire                  source_valid;
+wire                  source_sop;
+wire                  source_eop;
+
+//****************************************************************
+//                  main    code
+//****************************************************************
+//it is actually not a perfect fifo because there is no full data warning,thus data may be lost
+audio_in_fifo fifo_inst(
+	.aclr            (~sys_rst),
+	.wrclk           (audio_clk),   //the audio interface write the fifo, the fft just read
+	.wrreq           (audio_valid), //if there is a audio coming then request for writing
+	.data            (audio_data),  //data ccoming from the audio interface [16bits]
+	.rdclk           (sys_clk),     //fft is reading the data in it and it works in 50MHz
+	.rdreq           (fifo_rdreq),  //coming from the fft_ctrl module indicating there is a read request
+	.q               (audio_data_w), //output of the data in the fifo
+	.rdempty         (fifo_rd_empty) //output signal, indicating that there is no signal in the fifo
+);
+
+//fifo control module
+fft_ctrl  u_fft_ctrl(
+	.sys_clk           (sys_clk),
+	.sys_rst           (sys_rst),
+	
+	.fifo_rd_empty     (fifo_rd_empty),
+	
+);

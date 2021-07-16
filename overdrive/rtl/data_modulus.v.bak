@@ -1,0 +1,35 @@
+/*
+9/7/2021 
+written by Zyy Zhou (22670661)
+used for ELEC5551 design project2 fir filter
+
+the output of the fft module has 32 bits
+*/
+
+module data_modulus (
+	input              sys_clk,
+	input              rst_n,
+	//connect to fft module interface
+	input     [15:0]         source_real,  //real part of the fft data
+	input     [15:0]         source_imag,  //imaginary part ofthe fft data
+	input                    source_sop,
+	input                    source_eop,  //start and the end of a data segment (1 and 128)
+	input                    source_valid //coming from the fft module
+	
+	
+	output    [15:0]         data_modulus, //modulus of the data, go to the lcd part as the length of the bar
+	output     reg           data_sop,     //this is just a processing module of the output fft data,
+	output     reg           data_eop,     //there will be 3 clk period delay compared to the input sop and eop.
+	output     reg           data_valid,   //delay this signal for 3 clk period as welll	
+); 
+
+//parameter define
+
+//reg define
+
+//wire define
+
+//*************************************************************************************
+//                      main   code
+//*************************************************************************************
+

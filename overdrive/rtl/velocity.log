@@ -1,0 +1,113 @@
+Fri Jul 09 19:59:38 WST 2021  [debug] AvalonLogSystem initialized using logfile 'velocity.log'
+Fri Jul 09 19:59:38 WST 2021   [info] ************************************************************** 
+Fri Jul 09 19:59:38 WST 2021   [info] Starting Jakarta Velocity v1.4
+Fri Jul 09 19:59:38 WST 2021   [info] RuntimeInstance initializing.
+Fri Jul 09 19:59:38 WST 2021   [info] Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+Fri Jul 09 19:59:38 WST 2021   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Fri Jul 09 19:59:38 WST 2021   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Fri Jul 09 19:59:38 WST 2021   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+Fri Jul 09 19:59:38 WST 2021   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] FileResourceLoader : initialization starting.
+Fri Jul 09 19:59:38 WST 2021   [info] FileResourceLoader : adding path 'c:/altera/13.1/ip/altera/fft/lib/\template'
+Fri Jul 09 19:59:38 WST 2021   [info] FileResourceLoader : adding path '.'
+Fri Jul 09 19:59:38 WST 2021   [info] FileResourceLoader : initialization complete.
+Fri Jul 09 19:59:38 WST 2021   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.JarResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] JarResourceLoader : initialization starting.
+Fri Jul 09 19:59:38 WST 2021   [info] JarResourceLoader # of paths : 0
+Fri Jul 09 19:59:38 WST 2021   [info] JarResourceLoader : initialization complete.
+Fri Jul 09 19:59:38 WST 2021   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ClasspathResourceLoader : initialization starting.
+Fri Jul 09 19:59:38 WST 2021   [info] ClasspathResourceLoader : initialization complete.
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+Fri Jul 09 19:59:38 WST 2021   [info] Default ResourceManager initialization complete.
+Fri Jul 09 19:59:38 WST 2021   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+Fri Jul 09 19:59:38 WST 2021   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+Fri Jul 09 19:59:38 WST 2021   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+Fri Jul 09 19:59:38 WST 2021   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+Fri Jul 09 19:59:38 WST 2021   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+Fri Jul 09 19:59:38 WST 2021   [info] Created: 20 parsers.
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : initialization starting.
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : added new VM : #listall( list ) : source = VM_global_library.vm
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : added new VM : #listlist( list ) : source = VM_global_library.vm
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found VM_global_library.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro :  VM library template macro registration complete.
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : messages on  : VM system will output logging messages
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
+Fri Jul 09 19:59:38 WST 2021   [info] Velocimacro : initialization complete.
+Fri Jul 09 19:59:38 WST 2021   [info] Velocity successfully started.
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:38 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 19:59:53 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:05 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:00:16 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:05 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:02:38 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:03:15 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:04:55 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found fft_top_vhdl_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found alt_license.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found fft_top_verilog_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found alt_license_verilog.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found matlab_tb.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found matlab_model.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found set_nativelink_tcl.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+Fri Jul 09 20:05:21 WST 2021   [info] ResourceManager : found alt_license_tcl.txt with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

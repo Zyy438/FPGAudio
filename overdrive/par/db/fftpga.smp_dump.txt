@@ -1,0 +1,77 @@
+
+State Machine - |firpga|lcd_top:u_lcd_top|lcd_fifo_ctrl:u_fifo_ctrl|rd_state
+Name rd_state.00 rd_state.10 rd_state.01 
+rd_state.00 0 0 0 
+rd_state.01 1 0 1 
+rd_state.10 1 1 0 
+
+State Machine - |firpga|lcd_top:u_lcd_top|lcd_fifo_ctrl:u_fifo_ctrl|wr_state
+Name wr_state.00 wr_state.10 wr_state.01 
+wr_state.00 0 0 0 
+wr_state.01 1 0 1 
+wr_state.10 1 1 0 
+
+State Machine - |firpga|wm8978_ctrl:u_wm8978_ctrl|wm8978_config:u_wm8978_config|i2c_dri:u_i2c_dri|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|fft_s2_cur
+Name fft_s2_cur.LAST_LPP_C fft_s2_cur.LPP_C_OUTPUT fft_s2_cur.FIRST_LPP_C fft_s2_cur.WAIT_FOR_LPP_INPUT fft_s2_cur.IDLE 
+fft_s2_cur.IDLE 0 0 0 0 0 
+fft_s2_cur.WAIT_FOR_LPP_INPUT 0 0 0 1 1 
+fft_s2_cur.FIRST_LPP_C 0 0 1 0 1 
+fft_s2_cur.LPP_C_OUTPUT 0 1 0 0 1 
+fft_s2_cur.LAST_LPP_C 1 0 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|fft_s1_cur
+Name fft_s1_cur.LAST_INPUT fft_s1_cur.CHECK_DAV fft_s1_cur.WRITE_INPUT fft_s1_cur.WAIT_FOR_INPUT fft_s1_cur.IDLE 
+fft_s1_cur.IDLE 0 0 0 0 0 
+fft_s1_cur.WAIT_FOR_INPUT 0 0 0 1 1 
+fft_s1_cur.WRITE_INPUT 0 0 1 0 1 
+fft_s1_cur.CHECK_DAV 0 1 0 0 1 
+fft_s1_cur.LAST_INPUT 1 0 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|asj_fft_dft_bfp_fft_131:\gen_dft_1:bfpdft|asj_fft_bfp_o_fft_131:\gen_disc:bfp_detect|sdetd
+Name sdetd.DISABLE sdetd.SLBI sdetd.GBLK sdetd.ENABLE sdetd.BLOCK_READY sdetd.IDLE 
+sdetd.IDLE 0 0 0 0 0 0 
+sdetd.BLOCK_READY 0 0 0 0 1 1 
+sdetd.ENABLE 0 0 0 1 0 1 
+sdetd.GBLK 0 0 1 0 0 1 
+sdetd.SLBI 0 1 0 0 0 1 
+sdetd.DISABLE 1 0 0 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|asj_fft_m_k_counter_fft_131:\gen_le256_mk:ctrl|k_state
+Name k_state.HOLD k_state.NEXT_PASS_UPD k_state.RUN_CNT k_state.IDLE 
+k_state.IDLE 0 0 0 0 
+k_state.RUN_CNT 0 0 1 1 
+k_state.NEXT_PASS_UPD 0 1 0 1 
+k_state.HOLD 1 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|auk_dspip_avalon_streaming_source_fft_131:auk_dsp_atlantic_source_1|source_state
+Name source_state.end1 source_state.st_err source_state.run1 source_state.sop source_state.start 
+source_state.start 0 0 0 0 0 
+source_state.sop 0 0 0 1 1 
+source_state.run1 0 0 1 0 1 
+source_state.st_err 0 1 0 0 1 
+source_state.end1 1 0 0 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|auk_dspip_avalon_streaming_sink_fft_131:auk_dsp_atlantic_sink_1|sink_out_state
+Name sink_out_state.empty_and_ready sink_out_state.empty_and_not_ready sink_out_state.normal 
+sink_out_state.normal 0 0 0 
+sink_out_state.empty_and_not_ready 0 1 1 
+sink_out_state.empty_and_ready 1 0 1 
+
+State Machine - |firpga|fft_top:u_fft_top|fft:u_fft|asj_fft_sglstream_fft_131:asj_fft_sglstream_fft_131_inst|auk_dspip_avalon_streaming_sink_fft_131:auk_dsp_atlantic_sink_1|sink_state
+Name sink_state.end1 sink_state.st_err sink_state.run1 sink_state.stall sink_state.start 
+sink_state.start 0 0 0 0 0 
+sink_state.stall 0 0 0 1 1 
+sink_state.run1 0 0 1 0 1 
+sink_state.st_err 0 1 0 0 1 
+sink_state.end1 1 0 0 0 1 

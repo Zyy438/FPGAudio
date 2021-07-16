@@ -1,0 +1,262 @@
+EDA Netlist Writer report for fftpga
+Sun Jul 11 17:04:34 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Sun Jul 11 17:04:34 2021 ;
+; Revision Name             ; fftpga                            ;
+; Top-level Entity Name     ; fftpga                            ;
+; Family                    ; Cyclone IV E                      ;
++---------------------------+-----------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Sun Jul 11 17:04:32 2021
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off fftpga -c fftpga
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is not available
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is not available
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204012): Can't generate netlist output files because the file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is an OpenCore Plus time-limited file
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_pround_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrswgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_lib_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_o_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_source_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_mult_add_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_m_k_counter_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_in_write_sgl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_3dp_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_data_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_r_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dataadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_sglstream_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/fft_pack_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_i_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_sink_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_rst_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_bfp_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cnt_ctrl_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpp_serial_r2_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/twid_rom_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_dft_bfp_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_addr_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_math_pkg_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_tdl_bit_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cmult_std_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/auk_dspip_avalon_streaming_controller_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_wrengen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_lpprdadr2gen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_4dp_ram_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_twadgen_fft_131.vhd" is not available
+Error (204009): Can't generate netlist output files because the license for encrypted file "D:/fpga/fpga_prac/prac7/par/ipcore/fft-library/asj_fft_cxb_data_fft_131.vhd" is not available
+Error: Quartus II 64-Bit EDA Netlist Writer was unsuccessful. 204 errors, 0 warnings
+    Error: Peak virtual memory: 4597 megabytes
+    Error: Processing ended: Sun Jul 11 17:04:34 2021
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:02
+
+

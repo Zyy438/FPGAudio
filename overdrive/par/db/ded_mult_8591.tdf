@@ -1,0 +1,77 @@
+--alt_ded_mult_y CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" dedicated_multiplier_circuitry="AUTO" device_family="Cyclone IV E" dsp_block_balancing="Off" input_aclr_a="ACLR0" input_aclr_b="ACLR0" input_reg_a="CLOCK0" input_reg_b="CLOCK0" output_aclr="ACLR0" output_reg="CLOCK0" pipeline_reg="UNREGISTERED" representation_a="SIGNED" representation_b="SIGNED" sub_dedicated_multiplier_circuitry="YES" width_a=16 width_b=8 aclr clock dataa datab ena result
+--VERSION_BEGIN 13.1 cbx_alt_ded_mult_y 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_padd 2013:10:23:18:05:48:SJ cbx_parallel_add 2013:10:23:18:05:48:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ cbx_util_mgl 2013:10:23:18:05:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION cycloneive_mac_mult (aclr, clk, dataa[dataa_width-1..0], datab[datab_width-1..0], ena, signa, signb)
+WITH ( dataa_clock, dataa_width, datab_clock, datab_width, signa_clock, signb_clock)
+RETURNS ( dataout[dataa_width+datab_width-1..0]);
+FUNCTION cycloneive_mac_out (aclr, clk, dataa[dataa_width-1..0], ena)
+WITH ( dataa_width = 0, output_clock)
+RETURNS ( dataout[dataa_width-1..0]);
+FUNCTION dffpipe_a3c (d[23..0])
+RETURNS ( q[23..0]);
+
+--synthesis_resources = dsp_9bit 2 
+SUBDESIGN ded_mult_8591
+( 
+	aclr[3..0]	:	input;
+	clock[3..0]	:	input;
+	dataa[15..0]	:	input;
+	datab[7..0]	:	input;
+	ena[3..0]	:	input;
+	result[23..0]	:	output;
+) 
+VARIABLE 
+	mac_mult8 : cycloneive_mac_mult
+		WITH (
+			dataa_clock = "0",
+			dataa_width = 16,
+			datab_clock = "0",
+			datab_width = 8
+		);
+	mac_out9 : cycloneive_mac_out
+		WITH (
+			dataa_width = 24,
+			output_clock = "0"
+		);
+	pre_result : dffpipe_a3c;
+	x_dataa[15..0]	: WIRE;
+	x_datab[7..0]	: WIRE;
+	x_signa[0..0]	: WIRE;
+	x_signb[0..0]	: WIRE;
+
+BEGIN 
+	mac_mult8.aclr = aclr[0..0];
+	mac_mult8.clk = clock[0..0];
+	mac_mult8.dataa[] = ( x_dataa[]);
+	mac_mult8.datab[] = ( x_datab[]);
+	mac_mult8.ena = ena[0..0];
+	mac_mult8.signa = x_signa[];
+	mac_mult8.signb = x_signb[];
+	mac_out9.aclr = aclr[0..0];
+	mac_out9.clk = clock[0..0];
+	mac_out9.dataa[] = ( mac_mult8.dataout[23..0]);
+	mac_out9.ena = ena[0..0];
+	pre_result.d[23..0] = mac_out9.dataout[23..0];
+	result[] = pre_result.q[];
+	x_dataa[] = dataa[];
+	x_datab[] = datab[];
+	x_signa[] = B"1";
+	x_signb[] = B"1";
+END;
+--VALID FILE
