@@ -37,7 +37,7 @@ Usually, a system is called a linear system when it satisfies superposition prin
 
 ![image](https://user-images.githubusercontent.com/73535458/126027207-561a6440-72e9-4b6d-a358-f1b5095e5458.png)
 
-
+Due to its limited input and unit sample response, the FIR filter is a stable system (for any bounded input signal, its output signal is also bounded).
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
