@@ -117,7 +117,7 @@ Thus this kind of structure can be performed as:
 
 ![image](https://user-images.githubusercontent.com/73535458/126034511-348cc824-7549-4b17-94b0-ed903e2f3ad8.png)
 
-
+The fir filter structure designed by this method is more complicated than the previous two methods. However, in some narrowband filters, most of the frequency response coefficient will be zero. If the order of the filter is high at this time, compared to other structures, the frequency response structure will save more fpga resources.（many H(z) in the diagram will be eliminated because they are 0)
 
 ### fast convolution form
 
