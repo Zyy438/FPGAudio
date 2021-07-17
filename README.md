@@ -11,7 +11,7 @@ Software used is Quartus 13.1 as well as Modelsim
 
 ## Functions
 
-There are different audio processing algorithms applied in the project and they are stored in different branches of the project. Please go to the branch page to see more details of the algorithm you want.
+There are different audio processing algorithms applied in the project and they are stored in different branches of the project. Please go to the branch page to see more details of the algorithm you want.  
 /* Fundamental part*/
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
 2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)  
