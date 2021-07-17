@@ -59,16 +59,27 @@ As the most common and simplest fir filter structure, the direct fir filter can 
 
 The coefficients of the FIR filter can be divided into four cases: 1. The order is even and the coefficients are even symmetric about the center of symmetry. 2. The order is even and the coefficients are oddly symmetric about the center of symmetry. 3. The order is odd and the coefficients are even symmetric about the center of symmetry. 4. The order is odd and the coefficient is oddly symmetric about the center of symmetry[4].
 
-For the first situation, When the order N is an even number, the coefficient N+1 will be an odd number. At this time, the N/2th coefficient will be the symmetric center of the vector. The other coefficients are even symmetric with respect to the center of symmetry, which means that these coefficients can be reused (a coefficient is multiplied by two input samples) to save resources in fpga. The input/output response relationship can be transformed as follows:
+·For the first situation, When the order N is an even number, the coefficient N+1 will be an odd number. At this time, the N/2th coefficient will be the symmetric center of the vector. The other coefficients are even symmetric with respect to the center of symmetry, which means that these coefficients can be reused (a coefficient is multiplied by two input samples) to save resources in fpga. The input/output response relationship can be transformed as follows:
 
 ![image](https://user-images.githubusercontent.com/73535458/126030014-02f6de0c-0de7-4b51-a2cf-7aa2f671e957.png)
 
 It can be seen that the fir filter designed in this form only uses N/2+1 coefficients, which also means that only N/2+1 multipliers are needed. Because the resources that the multiplier occupies in fpga are much more than the adder, the multiplier reduced will save a lot of fpga resources.
 
-For the second situation, Since the coefficient is oddly symmetrical about the center of symmetry, the symmetrical coefficient is multiplied by -1. Others are similar to the previous case. 
+· For the second situation, Since the coefficient is oddly symmetrical about the center of symmetry, the symmetrical coefficient is multiplied by -1. Others are similar to the previous case. 
 
 ![image](https://user-images.githubusercontent.com/73535458/126030584-5f449d8b-e1ab-4656-bccd-ff6ee72876bf.png)
 
+· When N is odd, the coefficient will be even. This means that the center of symmetry will no longer be a coefficient, and there is no need to multiply the center of symmetry coefficient with an input signal. Similarly, the relational expression when N is odd and the coefficients are even symmetric can be obtained as: 
+
+![image](https://user-images.githubusercontent.com/73535458/126030695-919ca0c7-1f5a-4f72-b46f-007b9d6863ae.png)
+
+the structure of the fir filter in this case can be shown as:
+
+![image](https://user-images.githubusercontent.com/73535458/126030751-a2c7854d-3d84-4aa4-aeef-7e45fb25816c.png)
+
+· when N is odd and the coefficients are odd symmetric:
+
+![image](https://user-images.githubusercontent.com/73535458/126030726-0f41c9da-3eb2-43fb-a27b-7ff79e827905.png)
 
 ### cascade form
 
