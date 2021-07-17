@@ -7,7 +7,7 @@ The audio decoder chip used in this project is WM8978.
 The lcd display used in this project is ALIENTEK 4.3' RGBLCD 480 * 272  
 Software used is Quartus 13.1 as well as Modelsim  
 
-## how to use
+## How to use
 
 1. download the portfolio file firpga.7z.
 2. open the .qpf file in the 'par' folder by Quartus 13.1 or higher.
