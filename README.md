@@ -117,7 +117,7 @@ Thus this kind of structure can be performed as:
 
 ![image](https://user-images.githubusercontent.com/73535458/126034511-348cc824-7549-4b17-94b0-ed903e2f3ad8.png)
 
-The fir filter structure designed by this method is more complicated than the previous two methods. However, in some narrowband filters, most of the frequency response coefficient will be zero. If the order of the filter is high at this time, compared to other structures, the frequency response structure will save more fpga resources.（many H(z) in the diagram will be eliminated because they are 0)
+The fir filter structure designed by this method is more complicated than the previous two methods. However, in some narrowband filters, most of the frequency response coefficient will be zero. If the order of the filter is high at this time, compared to other structures, the frequency response structure will save more fpga resources.（many H(z) in the diagram will be eliminated because they are 0) Moreover, in some cases, many FIR filters are required to work in parallel, and a lot of FPGA resources will be used if the direct type is used. However, the use of frequency sampling structure allows some H(z) to be multiplexed, which means that different fir filters can be operated in parallel by weighted combination of these H(z) output values, thereby saving FPGA resources.
 
 ### fast convolution form
 
