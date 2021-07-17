@@ -63,7 +63,9 @@ For the first situation, When the order N is an even number, the coefficient N+1
 
 ![image](https://user-images.githubusercontent.com/73535458/126030014-02f6de0c-0de7-4b51-a2cf-7aa2f671e957.png)
 
+It can be seen that the fir filter designed in this form only uses N/2+1 coefficients, which also means that only N/2+1 multipliers are needed. Because the resources that the multiplier occupies in fpga are much more than the adder, the multiplier reduced will save a lot of fpga resources.
 
+For the second situation,
 ### cascade form
 
 ### frequency sampling form
