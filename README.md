@@ -15,7 +15,8 @@ There are different audio processing algorithms applied in the project and they 
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
 2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)
 3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE)
-5. HIGH WAY TO AC/DC (not start yet)
+5. REVERB (not start yet)
+6. DELAY (not start yet)
 
 ## Fpga_uart
 
