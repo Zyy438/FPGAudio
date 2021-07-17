@@ -41,6 +41,7 @@ Due to its limited input and unit sample response, FIR filter is a kind of stabl
 
 ## FIR Filter
 
+Assuming that n represents different time indexes, the FIR filter includes a finite length unit sample corresponding (coefficient) sequence: h(n). The number of its coefficients depends on the order of the filter: N. When the order of the filter is N, it will have N+1 coefficients (because h(0) is also a coefficient). It performs linear convolution operation on the sampled N+1 input signal units with N+1 coefficients to obtain the predicted output value y^(n) of the time index
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
