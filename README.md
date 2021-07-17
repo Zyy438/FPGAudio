@@ -53,6 +53,8 @@ FIR filters have different structures, the current mainstream ones are: direct t
 
 ### direct type
 
+As the most common and simplest fir filter structure, the direct fir filter can be easily deduced from its formula: For the input N+1 sampled signals, compare them with the corresponding elements in the corresponding signal vector. Multiply. Finally, add all the products to get the output at the moment. For the N+1 order fir filter of this structure, the required resources will be: N+1 multiplication units, N delay units (the system needs to temporarily store the input N signals in the register to Get N+1 current and past input signals) and an adder with N+1 inputs.
+
 ### cascade type
 
 ### frequency sampling type
