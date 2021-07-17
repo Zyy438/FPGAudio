@@ -31,10 +31,14 @@ A system is called a time invarient system if its response to the input signal d
 
 ### linear system
 
-A linear system is
+Usually, a system is called a linear system when it satisfies superposition principle. We can say that a system is a linear system when it satisfies the requirements shown below:
 
 ![image](https://user-images.githubusercontent.com/73535458/126026968-df481ef8-c5f2-467e-86e9-bad52a1eaa56.png)
 
+![image](https://user-images.githubusercontent.com/73535458/126027207-561a6440-72e9-4b6d-a358-f1b5095e5458.png)
+
+
 
 ## References
-1. 
+1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
+2. 
