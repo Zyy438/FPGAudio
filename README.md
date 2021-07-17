@@ -20,3 +20,11 @@ Software used is Quartus 13.1 as well as Modelsim
 9. if the input signal 'key0' becomes 0, the output sound will be filtered by a fir filter. The effect can be heard, or seen from the spectrum shown by the lcd display. 
 
 note: an fft ip-core is used in the fft module. The ip-core can only last for 60 mins after compilation if a liscence is not provided. Which means, if you do not purchase the ip-core, the spectrum will disappear after 60mins since the project is compiled. However, if the spectrum is not needed, delecting the fft module as well as the lcd module will pose no influence to the fir filter and the WM8978 driver.
+
+## Linear time invarient system
+
+### time invarient
+
+A system is called a time invarient system if its response to the input signal does not change as time goes by. Which means, for a time invarient system, the output of the system will be moved for n time index if the input is moved for n time index. This can be discribed by a relationship shown below:
+
+$$ T\left[x_{1}(n)+x_{2}(n)\right]=T\left[x_{1}(n)\right]+T\left[x_{2}(n)\right]=y_{1}(n)+y_{2}(n) $$
