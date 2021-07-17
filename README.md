@@ -103,7 +103,9 @@ The filter using this structure will use 3N/2 multiplying units, which is not an
 
 ### frequency sampling form
 
-Suppose there is a wanted frequency response:[8] The frequency target response at this time is Hd(e^jw). This is a continuous function of w. Hd(k) can be obtained by sampling N points on the unit circle whose absolute value of e^jw is 1, which is the actual discrete target response. For example, if the order of the filter is 7, there will be 8coefficients sampled from the desired frequency responce. thus the total circle will be divided into 7 segments and the length of each segments will be 2*pi/7. the k th coefficient will be the value of the frequency responce sampled at 2*pi/N*k (k>=0, k<N, int k). Finally, the response is inversely Fourier transformed to the time domain, and the required impulse response is thus obtained.
+Suppose there is a wanted frequency response:[8] The frequency target response at this time is Hd(e^jw). This is a continuous function of w. Hd(k) can be obtained by sampling N points on the unit circle whose absolute value of e^jw is 1, which is the actual discrete target response. For example, if the order of the filter is 7, there will be 8coefficients sampled from the desired frequency responce. thus the total circle will be divided into 7 segments and the length of each segments will be 2*pi/7. the k th coefficient will be the value of the frequency responce sampled at 2*pi/N*k (k>=0, k<N, int k). Finally, the response is inversely Fourier transformed to the time domain, and the required impulse response is thus obtained. [9]
+
+
 
 ![image](https://user-images.githubusercontent.com/73535458/126033098-88cffb53-78e2-4615-81e7-f7a61aa60da6.png)
 
