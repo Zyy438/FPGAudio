@@ -25,6 +25,13 @@ note: an fft ip-core is used in the fft module. The ip-core can only last for 60
 
 ### time invarient
 
-A system is called a time invarient system if its response to the input signal does not change as time goes by. Which means, for a time invarient system, the output of the system will be moved for n time index if the input is moved for n time index. This can be discribed by a relationship shown below:
+A system is called a time invarient system if its response to the input signal does not change as time goes by. Which means, for a time invarient system, the output of the system will be moved for n time index if the input is moved for n time index. This can be discribed by a relationship shown below[1]:
 
-$T\left[x_{1}(n)+x_{2}(n)\right]=T\left[x_{1}(n)\right]+T\left[x_{2}(n)\right]=y_{1}(n)+y_{2}(n)$
+![image](https://user-images.githubusercontent.com/73535458/126026968-df481ef8-c5f2-467e-86e9-bad52a1eaa56.png)
+
+### linear system
+
+A linear system is
+
+## References
+1. 
