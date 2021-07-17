@@ -113,6 +113,9 @@ According to the IDFT formula, the coefficients in time domain can be obtained a
 
 ![image](https://user-images.githubusercontent.com/73535458/126034242-eb29d3a0-c80c-4d07-b260-a77c81545518.png)
 
+Thus this kind of structure can be performed as:
+
+![image](https://user-images.githubusercontent.com/73535458/126034511-348cc824-7549-4b17-94b0-ed903e2f3ad8.png)
 
 
 
