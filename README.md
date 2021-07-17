@@ -83,6 +83,24 @@ the structure of the fir filter in this case can be shown as:
 
 ### cascade form
 
+The coefficient vector of the FIR filter can be expressed as multiple parts: the product of H1 (Z) and H2 (Z) and H3(Z)....[5],[6] Each part consists of three terms: real numbers, the negative power of Z multiplied by a specific coefficient, and the negative square power of Z multiplied by a specific coefficient. It can be expressed by the following formula:
+
+![image](https://user-images.githubusercontent.com/73535458/126031322-1e212980-9ec8-4a14-a3e4-be19228b7aef.png)
+
+For example, when the coefficient vector consists of two parts, they can be expressed as[6]:
+
+![image](https://user-images.githubusercontent.com/73535458/126031441-9b506f82-a1e3-425c-8566-2b0bb8ee67d0.png)
+
+Among them, H1(Z) can be expressed as[6]:
+
+![image](https://user-images.githubusercontent.com/73535458/126031468-230f2bf4-26c1-44c8-938b-bae600e30a8e.png)
+
+Therefore, the cascaded fir filter can be represented as the following figure:
+
+![image](https://user-images.githubusercontent.com/73535458/126031505-4bcf16db-9180-462a-9ec7-958da59e27bd.png)
+
+The filter using this structure will use 3N/2 multiplying units, which is not an ideal structure. However, when the order of the filter is high, the filter of this structure can still save a certain amount of resources.[7]
+
 ### frequency sampling form
 
 ### fast conolution form
@@ -93,3 +111,6 @@ the structure of the fir filter in this case can be shown as:
 2. https://www.sciencedirect.com/topics/engineering/fir-filters
 3. https://dsp.stackexchange.com/questions/15412/fir-filters-direct-form-transposed-fir
 4. https://www.allaboutcircuits.com/technical-articles/structures-for-implementing-finite-impulse-response-filters/
+5. https://ieeexplore.ieee.org/document/9010
+6. https://www.youtube.com/watch?v=oYYHJrwGPrc
+7. https://ieeexplore.ieee.org/document/196974
