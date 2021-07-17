@@ -55,6 +55,10 @@ FIR filters have different structures, the current mainstream ones are: direct t
 
 As the most common and simplest fir filter structure, the direct fir filter can be easily deduced from its formula: For the input N+1 sampled signals, compare them with the corresponding elements in the corresponding signal vector. Multiply. Finally, add all the products to get the output at the moment. For the N+1 order fir filter of this structure, the required resources will be: N+1 multiplication units, N delay units (the system needs to temporarily store the input N signals in the register to Get N+1 current and past input signals) and an adder with N+1 inputs.
 
+The coefficients of the FIR filter can be divided into four cases: 1. The order is even and the coefficients are even symmetric about the center of symmetry. 2. The order is even and the coefficients are oddly symmetric about the center of symmetry. 3. The order is odd and the coefficients are even symmetric about the center of symmetry. 4. The order is odd and the coefficient is oddly symmetric about the center of symmetry.
+
+For the first situation, 
+
 ### cascade type
 
 ### frequency sampling type
