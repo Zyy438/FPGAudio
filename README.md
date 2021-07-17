@@ -12,13 +12,11 @@ Software used is Quartus 13.1 as well as Modelsim
 ## Functions
 
 There are different audio processing algorithms applied in the project and they are stored in different branches of the project. Please go to the branch page to see more details of the algorithm you want.  
-/* Fundamental part*/
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
-2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)  
-/* Guitar pedal part */:  
-3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE)
-4. REVERB (not start yet)
-5. DELAY (not start yet)
+2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)    
+3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE) (Guitar effect pedal)
+4. REVERB (not start yet) (Guitar effect pedal)
+5. DELAY (not start yet) (Guitar effect pedal)
 
 ## Fpga_uart
 
