@@ -49,23 +49,27 @@ or:
 
 ![image](https://user-images.githubusercontent.com/73535458/126027581-ca98b0ee-c9eb-4e3f-96f7-63ed97bc15b9.png)
 
-FIR filters have different structures, the current mainstream ones are: direct type, cascade type, frequency sampling type and fast convolution type.
+FIR filters have different structures, the current mainstream ones are: direct form, cascade form, frequency sampling form and fast convolution form.
 
-### direct type
+### direct form
 
-As the most common and simplest fir filter structure, the direct fir filter can be easily deduced from its formula: For the input N+1 sampled signals, compare them with the corresponding elements in the corresponding signal vector. Multiply. Finally, add all the products to get the output at the moment. For the N+1 order fir filter of this structure, the required resources will be: N+1 multiplication units, N delay units (the system needs to temporarily store the input N signals in the register to Get N+1 current and past input signals) and an adder with N+1 inputs.
+As the most common and simplest fir filter structure, the direct fir filter can be easily deduced from its formula: For the input N+1 sampled signals, compare them with the corresponding elements in the corresponding signal vector. Multiply. Finally, add all the products to get the output at the moment. For the N+1 order fir filter of this structure, the required resources will be: N+1 multiplication units, N delay units (the system needs to temporarily store the input N signals in the register to Get N+1 current and past input signals) and an adder with N+1 inputs. Its structure can be shown below[3]:
 
-The coefficients of the FIR filter can be divided into four cases: 1. The order is even and the coefficients are even symmetric about the center of symmetry. 2. The order is even and the coefficients are oddly symmetric about the center of symmetry. 3. The order is odd and the coefficients are even symmetric about the center of symmetry. 4. The order is odd and the coefficient is oddly symmetric about the center of symmetry.
+![image](https://user-images.githubusercontent.com/73535458/126029774-cecfaa76-8e14-4bcc-8526-36ff1339dcc4.png)
+
+The coefficients of the FIR filter can be divided into four cases: 1. The order is even and the coefficients are even symmetric about the center of symmetry. 2. The order is even and the coefficients are oddly symmetric about the center of symmetry. 3. The order is odd and the coefficients are even symmetric about the center of symmetry. 4. The order is odd and the coefficient is oddly symmetric about the center of symmetry[4].
 
 For the first situation, 
 
-### cascade type
+### cascade form
 
-### frequency sampling type
+### frequency sampling form
 
-### fast conolution type
+### fast conolution form
 
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
 2. https://www.sciencedirect.com/topics/engineering/fir-filters
+3. https://dsp.stackexchange.com/questions/15412/fir-filters-direct-form-transposed-fir
+4. https://www.allaboutcircuits.com/technical-articles/structures-for-implementing-finite-impulse-response-filters/
