@@ -103,6 +103,8 @@ The filter using this structure will use 3N/2 multiplying units, which is not an
 
 ### frequency sampling form
 
+[8]
+
 ### fast convolution form
 
 
@@ -114,3 +116,4 @@ The filter using this structure will use 3N/2 multiplying units, which is not an
 5. https://ieeexplore.ieee.org/document/9010
 6. https://www.youtube.com/watch?v=oYYHJrwGPrc
 7. https://ieeexplore.ieee.org/document/196974
+8. https://blog.csdn.net/u010592995/article/details/89294823
