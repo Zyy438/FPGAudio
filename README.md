@@ -59,7 +59,10 @@ As the most common and simplest fir filter structure, the direct fir filter can 
 
 The coefficients of the FIR filter can be divided into four cases: 1. The order is even and the coefficients are even symmetric about the center of symmetry. 2. The order is even and the coefficients are oddly symmetric about the center of symmetry. 3. The order is odd and the coefficients are even symmetric about the center of symmetry. 4. The order is odd and the coefficient is oddly symmetric about the center of symmetry[4].
 
-For the first situation, 
+For the first situation, When the order N is an even number, the coefficient N+1 will be an odd number. At this time, the N/2th coefficient will be the symmetric center of the vector. The other coefficients are even symmetric with respect to the center of symmetry, which means that these coefficients can be reused (a coefficient is multiplied by two input samples) to save resources in fpga. The input/output response relationship can be transformed as follows:
+
+![image](https://user-images.githubusercontent.com/73535458/126030014-02f6de0c-0de7-4b51-a2cf-7aa2f671e957.png)
+
 
 ### cascade form
 
