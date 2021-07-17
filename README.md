@@ -103,7 +103,7 @@ The filter using this structure will use 3N/2 multiplying units, which is not an
 
 ### frequency sampling form
 
-Suppose there is a target frequency response:[8]
+Suppose there is a wanted frequency response:[8]
 
 ![image](https://user-images.githubusercontent.com/73535458/126033098-88cffb53-78e2-4615-81e7-f7a61aa60da6.png)
 
