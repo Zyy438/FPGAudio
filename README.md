@@ -49,6 +49,16 @@ or:
 
 ![image](https://user-images.githubusercontent.com/73535458/126027581-ca98b0ee-c9eb-4e3f-96f7-63ed97bc15b9.png)
 
+FIR filters have different structures, the current mainstream ones are: direct type, cascade type, frequency sampling type and fast convolution type.
+
+### direct type
+
+### cascade type
+
+### frequency sampling type
+
+### fast conolution type
+
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
