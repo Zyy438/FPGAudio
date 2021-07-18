@@ -129,6 +129,16 @@ This type of filter is mainly implemented based on the Fourier transform algorit
 
 The structure of the filter can be designed to optimize the resource occupation of the FPGA, and the effect of the filter is determined by its coefficient. Different coefficients can achieve different responses to the input signal in the frequency domain. Therefore, design coefficients are a very important part of designing filters. There are currently three mainstream design methods: 1. Window function method 2. Frequency sampling method 3. Chebyshev Equal Ripple Approximation Method(Remez algorithm). The window function method is not easy to design a filter with a given cutoff frequency, and the frequency sampling method is not a much better design either because it completely relies on some sampled values in the frequency response. Relatively speaking, Chebyshev method is the best one among the three methods. Since there is no function corresponding to the latter two methods in matlab, there will be too much work to verify whether fpga works as desired. Therefore, this project plans only to adopt the simplest window function design method.
 
+Window method: Assuming that a low-pass filter needs to be designed now, its ideal frequency domain response has been given, which is a rectangular function. Among them, Wc and -Wc are cutoff frequencies. When a signal passes through this filter, the low frequency part of the input signal (frequency less than Wc and greater than -Wc) will be multiplied by 1, and the other parts will be multiplied by 0. The frequency domain diagram of this frequency response is as follows:
+
+![image](https://user-images.githubusercontent.com/73535458/126057669-d5876fc3-118d-4684-a6e3-79023631d2b7.png)
+
+However, the coefficients required by the direct FIR filter will be in the time domain. Multiplication in the frequency domain is equivalent to convolution in the time domain. Therefore, the rectangular function can be Fourier transformed to get its image in the time domain. The converted image will be a Sinc function. The image at this time is still continuous：
+
+![image](https://user-images.githubusercontent.com/73535458/126057736-850577a1-07ce-425f-8b33-5f3ce4edc586.png)
+
+However, the time domain of this sinc function is infinite (the value of n ranges from negative infinity to positive infinity), and the fir filter cannot have infinite coefficients. The easiest way to solve this problem is to directly truncate the sinc function to obtain a coefficient that approximates the ideal frequency domain. Moreover, even after being truncated, because the image is continuous, the frequency response at this time also requires an infinite number of coefficients to be expressed. Therefore, the frequency response is sampled. The number of samples is directly determined by the number of filter coefficients. It can be found that the more coefficients of the filter, the closer the sampled frequency response will be to the ideal frequency response.
+
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
 2. https://www.sciencedirect.com/topics/engineering/fir-filters
