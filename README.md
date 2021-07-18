@@ -125,7 +125,7 @@ This type of filter is mainly implemented based on the Fourier transform algorit
 
 ![image](https://user-images.githubusercontent.com/73535458/126055314-03fd6a76-91d9-4983-ba1a-8c2c0a581ad9.png)
 
-## Design filter
+## Determine coefficients
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
