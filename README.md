@@ -16,7 +16,7 @@ There are different audio processing algorithms applied in the project and they 
 2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)    
 3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE) (Guitar effect pedal)
 4. REVERB (working on) (Guitar effect pedal)
-5. DELAY (not start yet) (Guitar effect pedal)
+5. DELAY (working on) (Guitar effect pedal)
 
 ## Fpga_uart
 
