@@ -127,6 +127,8 @@ This type of filter is mainly implemented based on the Fourier transform algorit
 
 ## Determine coefficients
 
+The structure of the filter can be designed to optimize the resource occupation of the FPGA, and the effect of the filter is determined by its coefficient.
+
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
 2. https://www.sciencedirect.com/topics/engineering/fir-filters
