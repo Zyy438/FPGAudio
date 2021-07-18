@@ -147,7 +147,8 @@ The frequency domain characteristics of h(n) obtained by this method will be:
 
 ![image](https://user-images.githubusercontent.com/73535458/126058011-5a271aae-6d7b-4421-832a-8344af7da7e7.png)
 
-However, due to the previous series of approximation operations, the frequency response actually obtained in the end will be different from the ideal situation. The most important difference is that the frequency response does not immediately drop to 0 at the cutoff frequency, but slowly and continuously. This creates a transition band, resulting in inaccurate frequency response, and some input signals with slightly higher frequencies can also pass through the filter. 
+However, due to the previous series of approximation operations, the frequency response actually obtained in the end will be different from the ideal situation. The most important difference is that the frequency response does not immediately drop to 0 at the cutoff frequency, but slowly and continuously. This creates a transition band, resulting in inaccurate frequency response, and some input signals with slightly higher frequencies can also pass through the filter. The width of the transition zone is equal to the width of the main lobe. At the same time, even if it drops to the side lobe, the amplitude of the first side lobe may not be small enough, resulting in insufficient frequency response. At the same time, the falling rate of the side lobe will also cause fluctuations in the amplitude characteristics. The length of the window function is also increased, and there are a series of other problems.
+In order to solve the problem, many different methods of designing window functions have been proposed, famous ones include Hamming window, Hanning window, Blackman window, etc.
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
