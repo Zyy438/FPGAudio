@@ -137,7 +137,17 @@ However, the coefficients required by the direct FIR filter will be in the time 
 
 ![image](https://user-images.githubusercontent.com/73535458/126057736-850577a1-07ce-425f-8b33-5f3ce4edc586.png)
 
-However, the time domain of this sinc function is infinite (the value of n ranges from negative infinity to positive infinity), and the fir filter cannot have infinite coefficients. The easiest way to solve this problem is to directly truncate the sinc function to obtain a coefficient that approximates the ideal frequency domain. Moreover, even after being truncated, because the image is continuous, the frequency response at this time also requires an infinite number of coefficients to be expressed. Therefore, the frequency response is sampled. The number of samples is directly determined by the number of filter coefficients. It can be found that the more coefficients of the filter, the closer the sampled frequency response will be to the ideal frequency response.
+However, the time domain of this sinc function is infinite (the value of n ranges from negative infinity to positive infinity), and the fir filter cannot have infinite coefficients. The easiest way to solve this problem is to directly truncate the sinc function to obtain a coefficient that approximates the ideal frequency domain. Moreover, even after being truncated, because the image is continuous, the frequency response at this time also requires an infinite number of coefficients to be expressed. Therefore, the frequency response is sampled. The number of samples is directly determined by the number of filter coefficients. It can be found that the more coefficients of the filter, the closer the sampled frequency response will be to the ideal frequency response. The truncated frequency response is shown in the figure below:
+
+![image](https://user-images.githubusercontent.com/73535458/126057870-27cb4ab1-76a6-4a8d-89a7-56c2ff9896ab.png)
+
+However, in the sampled frequency response, there is a negative part in the time domain. This means that the input signal to be sampled in the future needs to be multiplied by these coefficients. However, because the input signal may be a random signal, the future signal is not known, and the Fir filter must be a causal system. Therefore, the overall image is translated by (N-1)/2 sampling points. At this point the system becomes a causal system. The negative effect is that this will cause a certain delay in output.
+
+The frequency domain characteristics of h(n) obtained by this method will be:
+
+![image](https://user-images.githubusercontent.com/73535458/126058011-5a271aae-6d7b-4421-832a-8344af7da7e7.png)
+
+
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
