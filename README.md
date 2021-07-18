@@ -21,3 +21,8 @@ Software used is Quartus 13.1 as well as Modelsim
 8. play the audio files and you shall see the spectrum of the audio on the lcd display
 9. if the input signal 'key0' becomes 0, the output sound will be origional sound. Otherwise it will be overdrive sound.
 10. To adjust the amount of distortion, plz go adjust the parameter 'threshold' in the u_overdrive module. The lower it is, the more distortion there will be.
+
+## Default tone
+
+https://user-images.githubusercontent.com/73535458/126059102-9cc2f543-d324-4aa7-ae13-00e42ddf886e.mp4
+
