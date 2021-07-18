@@ -121,6 +121,11 @@ The fir filter structure designed by this method is more complicated than the pr
 
 ### fast convolution form
 
+This type of filter is mainly implemented based on the Fourier transform algorithm. After the value of the coefficient in the time domain is given, the discrete Fourier transform can be performed to obtain the corresponding frequency domain response. At the same time, discrete Fourier transform is also performed on the input signal to obtain its frequency spectrum. Multiply the two frequency domain signals to get the frequency domain signal after the response. finally, by doing an IDFT algorithm on the output signal, the output signal in the time domain can be obtained. The structure can be discriped as diagram shown below:
+
+![image](https://user-images.githubusercontent.com/73535458/126055314-03fd6a76-91d9-4983-ba1a-8c2c0a581ad9.png)
+
+## Design filter
 
 ## References
 1. https://www.student-circuit.com/learning/year2/signals-and-systems-intermediate/discrete-lti-system/
