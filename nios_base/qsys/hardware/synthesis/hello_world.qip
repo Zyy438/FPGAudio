@@ -1,0 +1,139 @@
+set_global_assignment -entity "hello_world" -library "hello_world" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "hello_world" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "hello_world" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../hello_world.sopcinfo"]
+set_global_assignment -entity "hello_world" -library "hello_world" -name SLD_INFO "QSYS_NAME hello_world HAS_SOPCINFO 1 GENERATION_ID 1626704057"
+set_global_assignment -library "hello_world" -name MISC_FILE [file join $::quartus(qip_path) "../hello_world.cmp"]
+set_global_assignment -library "hello_world" -name SLD_FILE [file join $::quartus(qip_path) "hello_world.regmap"]
+set_global_assignment -library "hello_world" -name SLD_FILE [file join $::quartus(qip_path) "hello_world.debuginfo"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "hello_world" -name MISC_FILE [file join $::quartus(qip_path) "../hello_world.qsys"]
+
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "hello_world.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "hello_world" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_irq_mapper.sv"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0.v"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_rsp_xbar_mux_001.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_rsp_xbar_mux.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_rsp_xbar_demux.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_cmd_xbar_mux_003.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_cmd_xbar_mux.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_cmd_xbar_demux.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_reorder_memory.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_id_router_003.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_id_router.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_addr_router_001.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_mm_interconnect_0_addr_router.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "hello_world" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_sysid_qsys.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_jtag_uart.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_onchip_ram.hex"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_onchip_ram.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_onchip_rom.hex"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_onchip_rom.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys.ocp"]
+set_global_assignment -library "hello_world" -name SDC_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys.sdc"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_bht_ram.mif"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_dc_tag_ram.mif"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_ic_tag_ram.mif"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_jtag_debug_module_tck.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_mult_cell.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_ociram_default_contents.mif"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_oci_test_bench.v"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_rf_ram_a.mif"]
+set_global_assignment -library "hello_world" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_rf_ram_b.mif"]
+set_global_assignment -library "hello_world" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/hello_world_nios2_qsys_test_bench.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "hello_world" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_reset_controller" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_irq_mapper" -library "hello_world" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "hello_world_irq_mapper" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_irq_mapper" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_interconnect_wrapper"
+set_global_assignment -entity "hello_world_mm_interconnect_0" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux_001" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux_001" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux_001" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_mux" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux_003" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux_003" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux_003" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_rsp_xbar_demux" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux_003" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux_003" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux_003" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_mux" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux_001" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux_001" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux_001" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_cmd_xbar_demux" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router_003" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router_003" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router_003" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_id_router" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router_001" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router_001" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router_001" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_mm_interconnect_0_addr_router" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "hello_world" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_master_agent" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "hello_world" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_merlin_master_translator" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_sysid_qsys" -library "hello_world" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "hello_world_sysid_qsys" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_sysid_qsys" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_jtag_uart" -library "hello_world" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "hello_world_jtag_uart" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_jtag_uart" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_onchip_ram" -library "hello_world" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "hello_world_onchip_ram" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_onchip_ram" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_onchip_rom" -library "hello_world" -name IP_TOOL_NAME "altera_avalon_onchip_memory2"
+set_global_assignment -entity "hello_world_onchip_rom" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_onchip_rom" -library "hello_world" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "hello_world_nios2_qsys" -library "hello_world" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "hello_world_nios2_qsys" -library "hello_world" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "hello_world_nios2_qsys" -library "hello_world" -name IP_TOOL_ENV "Qsys"

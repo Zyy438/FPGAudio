@@ -1,0 +1,49 @@
+--lpm_decode CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone IV E" LPM_DECODES=3 LPM_WIDTH=2 data enable eq
+--VERSION_BEGIN 13.1 cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_lpm_compare 2013:10:23:18:05:48:SJ cbx_lpm_decode 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+
+--synthesis_resources = lut 4 
+SUBDESIGN decode_lsa
+( 
+	data[1..0]	:	input;
+	enable	:	input;
+	eq[2..0]	:	output;
+) 
+VARIABLE 
+	data_wire[1..0]	: WIRE;
+	enable_wire	: WIRE;
+	eq_node[2..0]	: WIRE;
+	eq_wire[3..0]	: WIRE;
+	w_anode817w[2..0]	: WIRE;
+	w_anode830w[2..0]	: WIRE;
+	w_anode838w[2..0]	: WIRE;
+	w_anode846w[2..0]	: WIRE;
+
+BEGIN 
+	data_wire[] = data[];
+	enable_wire = enable;
+	eq[] = eq_node[];
+	eq_node[2..0] = eq_wire[2..0];
+	eq_wire[] = ( w_anode846w[2..2], w_anode838w[2..2], w_anode830w[2..2], w_anode817w[2..2]);
+	w_anode817w[] = ( (w_anode817w[1..1] & (! data_wire[1..1])), (w_anode817w[0..0] & (! data_wire[0..0])), enable_wire);
+	w_anode830w[] = ( (w_anode830w[1..1] & (! data_wire[1..1])), (w_anode830w[0..0] & data_wire[0..0]), enable_wire);
+	w_anode838w[] = ( (w_anode838w[1..1] & data_wire[1..1]), (w_anode838w[0..0] & (! data_wire[0..0])), enable_wire);
+	w_anode846w[] = ( (w_anode846w[1..1] & data_wire[1..1]), (w_anode846w[0..0] & data_wire[0..0]), enable_wire);
+END;
+--VALID FILE

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchConfiguration">
+<stringAttribute key="byteStreamDeviceCableName" value="USB-Blaster on localhost [USB-0]"/>
+<stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
+<stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
+<booleanAttribute key="downloadProgram" value="true"/>
+<stringAttribute key="elfFile" value="D:\fpga\fpga_prac\prac10\qsys\hardware\soft\hello_world\hello_world.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.altera.debug.cdi.gdb.plugin.Nios2GdbCdiDebugger"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="hello_world.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="hello_world"/>
+<stringAttribute key="processorCableName" value="USB-Blaster on localhost [USB-0]"/>
+<stringAttribute key="processorDeviceIndex" value="1"/>
+<stringAttribute key="processorInstanceId" value="0"/>
+<booleanAttribute key="runProgram" value="true"/>
+</launchConfiguration>

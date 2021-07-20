@@ -1,0 +1,19 @@
+!SESSION 2021-07-19 22:36:30.455 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-07-19 22:39:29.500
+!MESSAGE Indexed 'hello_world_bsp' (79 sources, 57 headers) in 0.61 sec: 937 declarations; 2,256 references; 113 unresolved inclusions; 5 syntax errors; 194 unresolved names (5.73%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-07-19 22:39:45.779
+!MESSAGE Indexed 'hello_world' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-07-19 22:54:08.498
+!MESSAGE Executing: [D:/quartus/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x19000 --id=0x0 --timestamp=1626704057]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-07-19 22:54:24.765
+!MESSAGE Executing: [D:/quartus/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x19000 --id=0x0 --timestamp=1626704057 /cygdrive/d/fpga/fpga_prac/prac10/qsys/hardware/soft/hello_world/hello_world.elf]

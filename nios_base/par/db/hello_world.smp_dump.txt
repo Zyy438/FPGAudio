@@ -1,0 +1,9 @@
+
+State Machine - |hello_world_top|hello_world:u0|hello_world_nios2_qsys:nios2_qsys|hello_world_nios2_qsys_nios2_oci:the_hello_world_nios2_qsys_nios2_oci|hello_world_nios2_qsys_jtag_debug_module_wrapper:the_hello_world_nios2_qsys_jtag_debug_module_wrapper|hello_world_nios2_qsys_jtag_debug_module_tck:the_hello_world_nios2_qsys_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

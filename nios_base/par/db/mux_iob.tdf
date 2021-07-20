@@ -1,0 +1,41 @@
+--lpm_mux CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone IV E" LPM_SIZE=3 LPM_WIDTH=32 LPM_WIDTHS=2 data result sel
+--VERSION_BEGIN 13.1 cbx_lpm_mux 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+
+--synthesis_resources = lut 64 
+SUBDESIGN mux_iob
+( 
+	data[95..0]	:	input;
+	result[31..0]	:	output;
+	sel[1..0]	:	input;
+) 
+VARIABLE 
+	data0_wire[31..0]	: WIRE;
+	data1_wire[31..0]	: WIRE;
+	data2_wire[31..0]	: WIRE;
+	result_node[31..0]	: WIRE;
+
+BEGIN 
+	data0_wire[] = (data[31..0] & (! sel[0..0]));
+	data1_wire[] = (data[63..32] & sel[0..0]);
+	data2_wire[] = (data[95..64] & sel[1..1]);
+	result[] = result_node[];
+	result_node[] = (((data0_wire[] # data1_wire[]) & (! sel[1..1])) # data2_wire[]);
+END;
+--VALID FILE

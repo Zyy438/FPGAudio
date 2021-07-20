@@ -1,0 +1,227 @@
+Flow report for hello_world
+Mon Jul 19 22:35:59 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Jul 19 22:35:59 2021       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; hello_world                                 ;
+; Top-level Entity Name              ; hello_world_top                             ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE10F17C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 3,584 / 10,320 ( 35 % )                     ;
+;     Total combinational functions  ; 3,304 / 10,320 ( 32 % )                     ;
+;     Dedicated logic registers      ; 1,972 / 10,320 ( 19 % )                     ;
+; Total registers                    ; 1972                                        ;
+; Total pins                         ; 2 / 180 ( 1 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 309,120 / 423,936 ( 73 % )                  ;
+; Embedded Multiplier 9-bit elements ; 4 / 46 ( 9 % )                              ;
+; Total PLLs                         ; 1 / 2 ( 50 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/19/2021 22:35:01 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; hello_world         ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                        ;
++-------------------------------------+---------------------------------------------------------------+---------------+--------------------------------------------------+----------------+
+; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name                                      ; Section Id     ;
++-------------------------------------+---------------------------------------------------------------+---------------+--------------------------------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 233654129003080.162670530107800                               ; --            ; --                                               ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                   ; --            ; --                                               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                     ; <None>        ; --                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_avalon_sc_fifo                            ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_master_agent                       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_master_translator                  ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_slave_agent                        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_slave_translator                   ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_traffic_limiter                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_reset_controller                          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; --                                               ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_irq_mapper                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_jtag_uart                            ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0                    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_addr_router        ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_addr_router_001    ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux_001 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux_003   ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_id_router          ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_id_router_003      ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux     ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux_003 ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux       ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux_001   ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_nios2_qsys                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_onchip_ram                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_onchip_rom                           ; --             ;
+; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; hello_world_sysid_qsys                           ; --             ;
+; IP_TOOL_NAME                        ; ALTPLL                                                        ; --            ; --                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                         ; --            ; altera_avalon_sc_fifo                            ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                                    ; --            ; altera_merlin_master_agent                       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                               ; --            ; altera_merlin_master_translator                  ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                                     ; --            ; altera_merlin_slave_agent                        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                                ; --            ; altera_merlin_slave_translator                   ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_traffic_limiter                                 ; --            ; altera_merlin_traffic_limiter                    ; --             ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                       ; --            ; altera_reset_controller                          ; --             ;
+; IP_TOOL_NAME                        ; Qsys                                                          ; --            ; --                                               ; --             ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                             ; --            ; hello_world_irq_mapper                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                       ; --            ; hello_world_jtag_uart                            ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_interconnect_wrapper                            ; --            ; hello_world_mm_interconnect_0                    ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; hello_world_mm_interconnect_0_addr_router        ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; hello_world_mm_interconnect_0_addr_router_001    ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux_001 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux_003   ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; hello_world_mm_interconnect_0_id_router          ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; hello_world_mm_interconnect_0_id_router_003      ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux     ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux_003 ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux       ; --             ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux_001   ; --             ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                             ; --            ; hello_world_nios2_qsys                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                  ; --            ; hello_world_onchip_ram                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                                  ; --            ; hello_world_onchip_rom                           ; --             ;
+; IP_TOOL_NAME                        ; altera_avalon_sysid_qsys                                      ; --            ; hello_world_sysid_qsys                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; --                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_avalon_sc_fifo                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_merlin_master_agent                       ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_merlin_master_translator                  ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_merlin_slave_agent                        ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_merlin_slave_translator                   ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_merlin_traffic_limiter                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; altera_reset_controller                          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; --                                               ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_irq_mapper                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_jtag_uart                            ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0                    ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_addr_router        ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_addr_router_001    ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux     ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_demux_001 ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux       ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_cmd_xbar_mux_003   ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_id_router          ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_id_router_003      ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux     ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_demux_003 ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux       ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_mm_interconnect_0_rsp_xbar_mux_001   ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_nios2_qsys                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_onchip_ram                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_onchip_rom                           ; --             ;
+; IP_TOOL_VERSION                     ; 13.1                                                          ; --            ; hello_world_sysid_qsys                           ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --                                               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --                                               ; --             ;
+; MISC_FILE                           ; ../qsys/hardware/synthesis/../hello_world.cmp                 ; --            ; --                                               ; --             ;
+; MISC_FILE                           ; ../qsys/hardware/synthesis/../hello_world.qsys                ; --            ; --                                               ; --             ;
+; MISC_FILE                           ; ipcore/pll_inst.v                                             ; --            ; --                                               ; --             ;
+; MISC_FILE                           ; ipcore/pll_bb.v                                               ; --            ; --                                               ; --             ;
+; MISC_FILE                           ; ipcore/pll.ppf                                                ; --            ; --                                               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                             ; --            ; --                                               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                             ; --            ; --                                               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                    ; --            ; --                                               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                    ; --            ; --                                               ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                      ; --            ; hello_world_top                                  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                         ; --            ; hello_world_top                                  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                        ; --            ; hello_world_top                                  ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                           ; --            ; --                                               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                         ; --            ; --                                               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --                                               ; --             ;
+; SLD_FILE                            ; ../qsys/hardware/synthesis/hello_world.regmap                 ; --            ; --                                               ; --             ;
+; SLD_FILE                            ; ../qsys/hardware/synthesis/hello_world.debuginfo              ; --            ; --                                               ; --             ;
+; SLD_INFO                            ; QSYS_NAME hello_world HAS_SOPCINFO 1 GENERATION_ID 1626704057 ; --            ; --                                               ; --             ;
+; SOPCINFO_FILE                       ; ../qsys/hardware/synthesis/../hello_world.sopcinfo            ; --            ; --                                               ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --                                               ; --             ;
+; TOP_LEVEL_ENTITY                    ; hello_world_top                                               ; hello_world   ; --                                               ; --             ;
++-------------------------------------+---------------------------------------------------------------+---------------+--------------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4816 MB             ; 00:00:18                           ;
+; Fitter                    ; 00:00:16     ; 1.6                     ; 5468 MB             ; 00:00:19                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4610 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4734 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4627 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:45     ; --                      ; --                  ; 00:00:47                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; YLMF-2021WVETQC  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; YLMF-2021WVETQC  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; YLMF-2021WVETQC  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; YLMF-2021WVETQC  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; YLMF-2021WVETQC  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off hello_world -c hello_world
+quartus_fit --read_settings_files=off --write_settings_files=off hello_world -c hello_world
+quartus_asm --read_settings_files=off --write_settings_files=off hello_world -c hello_world
+quartus_sta hello_world -c hello_world
+quartus_eda --read_settings_files=off --write_settings_files=off hello_world -c hello_world
+
+
+

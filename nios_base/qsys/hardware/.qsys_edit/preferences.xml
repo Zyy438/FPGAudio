@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="149" />
+   <clocksource preferredWidth="149" />
+   <frequency preferredWidth="130" />
+  </columns>
+ </clocktable>
+ <window width="1100" height="800" x="280" y="19" />
+ <library expandedCategories="Library,Project" />
+ <generation path="D:/fpga/fpga_prac/prac10/qsys/hardware" />
+ <hdlexample language="VERILOG" />
+</preferences>
