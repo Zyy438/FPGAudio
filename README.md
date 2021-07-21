@@ -15,7 +15,7 @@ There are different audio processing algorithms applied in the project and they 
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
 2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)    
 3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE) (Guitar effect pedal)
-4. AD/DA(not start yet)
+4. DDS(not start yet)
 
 ## Fpga_uart
 
