@@ -1,0 +1,13 @@
+/*
+written by Zyy Zhou(22670661) UWA
+used for ELEC 5552 design unit project 4 fir filter design
+autorefresh module for sdram to keep the data in capacitors
+*/
+
+module  autorefresh (
+	input                             sys_clk,
+	input                             sys_rst,
+
+);
+
+endmodule

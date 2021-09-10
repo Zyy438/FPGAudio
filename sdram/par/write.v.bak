@@ -1,0 +1,59 @@
+/*
+Zyy Zhou (22670661)
+write module of sdram, used for ELEC5552 design2 unit project 4 fir filter
+this module is working in a form of finite state machine, 
+it will be excited from the idle state by write_en signal
+there situations will end the writing state:
+1. the data has been completly written
+2. need to refresh the memory units
+3. a row has been fullt written, and need to jump to the next row
+*/
+
+module write (
+	//system input signals 
+	input                             sys_clk,
+	input                             sys_rst,
+	//communication between the module and the top level entity
+	input                             write_en,  //coming from the arbit(top level entity) module and the module will be enabled by this signal
+	output   reg                      write_end_flag,
+	output   reg                      write_req,   
+	//the refresh request will interrupt the writing process
+	input                             ref_req,
+	//interface to the sdram port
+	output   reg    [3:0]             wr_cmd,
+	output   reg    [11:0]            wr_addr,
+	output   reg    [1:0]             wr_bank_addr,
+	//interface to the data input port
+	input                             wr_trigger   //trigger signal indicating that a data is coming in and need to be written
+);
+
+
+//========================================================================================
+//                          parameter define
+//========================================================================================
+//----------------------------------parameter define------------------------------------------
+//defining states of the writing module
+localparam          IDLE = 3'b000;
+localparam          WR_REQ = 3'b001;
+localparam          WR_ACT = 3'b010;
+localparam          WR_WR = 3'b011;
+localparam          WR_PRECHARGE = 3'b100;  //after writing the sdram needs precharge and it will automatically turn to idle state
+
+//-------------------------------------reg define----------------------------------------------
+reg                  [2:0]             wr_state;
+reg                                    wr_flag;
+//internal reg parameters  (write end flag is an output signal not internal but data_end is)
+reg                                    precharge_end_flag;
+reg                                    act_end_flag;
+reg                                    sd_row_end;
+reg                  [1:0]             burst_cnt;
+reg                  [1:0]             burst_cnt_t;
+reg                                    data_end_flag;  //indicating that a data has been fully written
+//coutner
+reg                  [3:0]             act_cnt;
+reg                  [3:0]             break_cnt;
+//------------------------------------wire define----------------------------------------------
+
+
+
+endmodule

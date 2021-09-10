@@ -1,0 +1,24 @@
+
+State Machine - |sdram|state_sdram
+Name state_sdram.READ state_sdram.WRITE state_sdram.REFRESH_TOP state_sdram.ARBIT state_sdram.IDLE 
+state_sdram.IDLE 0 0 0 0 0 
+state_sdram.ARBIT 0 0 0 1 1 
+state_sdram.REFRESH_TOP 0 0 1 0 1 
+state_sdram.WRITE 0 1 0 0 1 
+state_sdram.READ 1 0 0 0 1 
+
+State Machine - |sdram|read:u_read|rd_state
+Name rd_state.RD_RD rd_state.RD_ACT rd_state.RD_REQ rd_state.IDLE rd_state.RD_PRECHARGE 
+rd_state.IDLE 0 0 0 0 0 
+rd_state.RD_REQ 0 0 1 1 0 
+rd_state.RD_ACT 0 1 0 1 0 
+rd_state.RD_RD 1 0 0 1 0 
+rd_state.RD_PRECHARGE 0 0 0 1 1 
+
+State Machine - |sdram|write:u_write|wr_state
+Name wr_state.WR_WR wr_state.WR_ACT wr_state.WR_REQ wr_state.IDLE wr_state.WR_PRECHARGE 
+wr_state.IDLE 0 0 0 0 0 
+wr_state.WR_REQ 0 0 1 1 0 
+wr_state.WR_ACT 0 1 0 1 0 
+wr_state.WR_WR 1 0 0 1 0 
+wr_state.WR_PRECHARGE 0 0 0 1 1 
