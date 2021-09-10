@@ -14,10 +14,11 @@ Software used is Quartus 13.1 as well as Modelsim
 There are different audio processing algorithms applied in the project and they are stored in different branches of the project. Please go to the branch page to see more details of the algorithm you want.  
 1. [FFTPGA](https://github.com/Zyy438/FPGAudio/tree/FFTPGA)  
 2. [FIRPGA](https://github.com/Zyy438/FPGAudio/tree/FIRPGA)    
-3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE) (Guitar effect pedal)
-4. AD/DC(not start yet)
+3. [OVERDRIVE](https://github.com/Zyy438/FPGAudio/tree/OVERDRIVE) (Guitar effect pedal) 
 
 ## Fpga_uart
 
 Another repository called Fpga_uart is also used in this project, it is used to connect the FPGA board to the host laptop(PC) to load parameters of different algorithms.  
-Link to Fpga_uart:https://github.com/Zyy438/fpga_uart
+An sdram repo may also be used for saving audio datas and implement delay function.  
+Link to Fpga_uart:https://github.com/Zyy438/fpga_uart  
+Link to Fpga_sdram:https://github.com/Zyy438/FPGA_sdram  
