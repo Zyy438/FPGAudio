@@ -1,0 +1,41 @@
+|sync
+sys_clk => count[0].CLK
+sys_clk => count[1].CLK
+sys_clk => count[2].CLK
+sys_clk => count[3].CLK
+sys_clk => count[4].CLK
+sys_clk => count[5].CLK
+sys_clk => count[6].CLK
+sys_clk => rd_reg[0].CLK
+sys_clk => rd_reg[1].CLK
+sys_clk => rd_reg[2].CLK
+sys_clk => rd_reg[3].CLK
+sys_clk => rd_reg[4].CLK
+sys_clk => rd_reg[5].CLK
+sys_clk => rd_reg[6].CLK
+sys_clk => rd_reg[7].CLK
+sys_rst => rd_reg[0].ACLR
+sys_rst => rd_reg[1].ACLR
+sys_rst => rd_reg[2].ACLR
+sys_rst => rd_reg[3].ACLR
+sys_rst => rd_reg[4].ACLR
+sys_rst => rd_reg[5].ACLR
+sys_rst => rd_reg[6].ACLR
+sys_rst => rd_reg[7].ACLR
+sys_rst => count[0].ACLR
+sys_rst => count[1].ACLR
+sys_rst => count[2].ACLR
+sys_rst => count[3].ACLR
+sys_rst => count[4].ACLR
+sys_rst => count[5].ACLR
+sys_rst => count[6].ACLR
+rd[0] <= rd_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+rd[1] <= rd_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+rd[2] <= rd_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+rd[3] <= rd_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+rd[4] <= rd_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+rd[5] <= rd_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+rd[6] <= rd_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+rd[7] <= rd_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

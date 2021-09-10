@@ -1,0 +1,40 @@
+/*
+Yuyang Zhou
+30/07/2021
+for zhongsen communication test
+single bit data synchronization between two clk domains
+*/
+
+module sync(
+	input        sys_clk,
+	input        sys_rst,
+	input        datain,
+	//output signal
+	output        data_sync
+);
+
+//parameter define
+
+//reg define
+reg    temp_reg0;
+reg    temp_reg1;
+reg    temp_reg2;
+//wire define
+
+//*****************************************************************
+//               main code
+//*****************************************************************
+always @(posedge sys_clk or negedge sys_rst) begin
+	if(!sys_rst) begin
+		temp_reg0 <= 1'b0;
+		temp_reg1 <= 1'b0;
+		temp_reg2 <= 1'b0;
+	end
+	else begin
+		temp_reg0 <= datain;
+		temp_reg1 <= temp_reg0;
+		temp_reg2 <= temp_reg1;
+	end
+end
+
+endmodule
