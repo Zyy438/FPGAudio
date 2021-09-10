@@ -21,4 +21,4 @@ There are different audio processing algorithms applied in the project and they 
 Another repository called Fpga_uart is also used in this project, it is used to connect the FPGA board to the host laptop(PC) to load parameters of different algorithms.  
 An sdram repo may also be used for saving audio datas and implement delay function.  
 Link to Fpga_uart:https://github.com/Zyy438/fpga_uart  
-Link to Fpga_sdram:https://github.com/Zyy438/FPGA_sdram  
+Link to Fpga_sdram:https://github.com/Zyy438/FPGA_sdram  (already moved to this repo, see in sdram folder)
