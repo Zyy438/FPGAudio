@@ -1,0 +1,6 @@
+
+State Machine - |uart_syn|uart_scan_seg:u_uart_scan_seg|word_sel
+Name word_sel.WORD0 word_sel.WORD2 word_sel.WORD1 
+word_sel.WORD0 0 0 0 
+word_sel.WORD1 1 0 1 
+word_sel.WORD2 1 1 0 

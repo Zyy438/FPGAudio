@@ -1,0 +1,48 @@
+module beep (
+	input               sys_clk,
+	input               sys_rst,
+	input               uart_en,
+	
+	output     reg      beep_en
+);
+
+//parameter define
+parameter       MAX_COUNT = 27'd5000000;
+
+//reg define
+reg    [26:0]   count;
+reg             uart_en_0;
+reg             uart_en_1; //two signals to detect the rising edge of the uart_en signal
+
+//wire define
+wire            uart_en_ris; //detect the rising edge of the uart_en signal
+
+//***********************************************************
+//                main  code
+//***********************************************************
+//rising edge detection (1 enabled)
+assign uart_en_ris = 
+//delay the uart_en_1 signal for two time period
+alwaya @ (posedge sys_clk or negedge sys_rst) begin
+	if (!sys_rst) begin
+		uart_en_0 <= 1'b0;
+		uart_en_1 <= 1'b0;
+	end
+	else begin
+		uart_en_0 <= uart_en;
+		uart_en_1 <= uart_en_0;   //non-blocking assignment, causing the delay
+	end
+end
+
+always @ (posedge sys_clk or negedge sys_rst) begin
+	if (!sys_rst)      //press the buttom to reset the counter
+		count <= 27'd0;
+	else if (uart_en) begin  //if there is a signal transmitted
+		if (count < MAX_COUNT-1)
+			count <= count + 1; 
+		else
+			count <= 27'd0;
+	end
+	else //disable counting if no signal transmitted
+		count <= count;  //complete this round
+end

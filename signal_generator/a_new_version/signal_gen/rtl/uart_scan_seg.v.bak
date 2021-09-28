@@ -1,0 +1,21 @@
+module scan_seg (
+	input             sys_clk,
+	input             sys_rst,
+	input             uart_en,  //enable this module if signal uart_en 
+	
+	output   [5:0]    sel;      //select which segment to be turned on
+	output   [7:0]    seg_led;  //indicate 
+);
+
+//parameter define
+
+
+//reg define
+
+
+//wire define
+
+
+//************************************************************************
+//                 main code
+//************************************************************************
